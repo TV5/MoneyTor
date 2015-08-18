@@ -27,10 +27,16 @@
   <link rel="stylesheet" type="text/css" href="../dist/components/icon.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/tab.min.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/table.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/modal.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/dimmer.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/transition.min.css">
   <script src="assets/library/jquery.min.js"></script>
   <script src="../dist/components/form.js"></script>
   <script src="../dist/components/transition.js"></script>
   <script src="../dist/components/tab.min.js"></script>
+  <script src="../dist/components/modal.min.js"></script>
+  <script src="../dist/components/dimmer.min.js"></script>
+  <script src="../dist/components/transition.min.js"></script>
 
   <style type="text/css">
     body {
@@ -90,13 +96,14 @@
 	</div>
 
 	<div class="ui bottom attached active tab segment">
-	  <div class="ui form">
+
+<!-- 	  <div class="ui form">
 	  <div class="inline fields">
-	    <div class="four wide field">
+	    <div class="four wide field" style="float:left">
 	      <label>Start</label>
 	      <input type="date">
 	    </div>
-	    <div class="four wide field">
+	    <div class="four wide field" style="float:left">
 	      <label>End</label>
 	      <input type="date">
 	    </div>
@@ -104,7 +111,29 @@
 	      <button class="ui button">Add Payable</button>
 	    </div>
 	  </div>
+	  </div> -->
+	  
+	  <span>
+	  <div class="ui form ">
+	  	<div class="inline fields" style="float:left">
+	  	<div class="eight wide field">
+	      <label>Start</label>
+	      <input type="date">
+	    </div>
+	    <div class="eight wide field">
+	      <label>End</label>
+	      <input type="date">
+	    </div>
+	    </div>
+	    <div class="three wide feild" style="float:right">
+	      <button id="addPayableBtn" class="ui button">Add Payable</button>
+	    </div>
 	  </div>
+	  
+	    
+	  </span>
+	  
+	  
 	  
 	  <table class="ui celled padded table">
 	  <thead>
@@ -167,9 +196,32 @@
 	    <th>September 18, 2015</th>
 	  	</tr>
 	  </tbody>
+	  </table>
+	<span>
+	  <div class="ui bottom attached text" style="float:left"><b>Total Amount: </b> P500000.00</div>
+	  <button class="ui button" style="float:right">Print</button>
+	</span>
 	</div>
 </div>
 
-</body>
+<div id="addPayable" class="ui modal">
+  <div class="header">Header</div>
+  <div class="content">
+    <p></p>
+  </div>
+  <div class="actions">
+    <div class="ui approve button">Approve</div>
+    <div class="ui button">Neutral</div>
+    <div class="ui cancel button">Cancel</div>
+  </div>
+</div>
 
+</body>
+<script type="text/javascript">
+
+	$('#addPayableBtn').click(function(){
+		$('#addPayable').modal('show');
+	});
+
+</script>
 </html>
