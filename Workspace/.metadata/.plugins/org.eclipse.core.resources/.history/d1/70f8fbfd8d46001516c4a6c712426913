@@ -65,7 +65,7 @@
   </style>
 </head>
 <body>
-
+<link rel="import" href="login.html">
 
 <div class="ui container">
 	<div class="ui text menu firstmenu" width="100%">
@@ -83,7 +83,7 @@
 	   <a id="settingsLink" class="item">
 	     Settings
 	   </a>
-	   <a class="ui item">
+	   <a id="logoutLink" class="ui item">
 	      Log out
 	    </a>
 	  </div>
@@ -107,18 +107,17 @@
 	<div class="ui bottom attached active tab segment" data-tab="payablesTab" style="padding-bottom:50px">
 	  <div class="ui form ">
 	  	<div class="inline fields" style="float:left">
-	  	<div class="six wide field">
+	    <div class="four wide field">
+	      <label>Entries per page</label>
+	      <input type="number" value="10">
+	    </div>
+	  	<div class="five wide field">
 	      <label>Start Date</label>
 	      <input type="date">
 	    </div>
-	    <div class="six wide field">
+	    <div class="five wide field">
 	      <label>End Date</label>
 	      <input type="date">
-	    </div>
-	    
-	    <div class="three wide field">
-	      <label>Show</label>
-	      <input type="number">
 	    </div>
 	    </div>
 	    <div class="three wide feild" style="float:right">
@@ -204,19 +203,23 @@
 	</div>
 	
 		<div class="ui bottom attached tab segment" data-tab="receivablesTab" style="padding-bottom:50px">
-				  <div class="ui form ">
+		<div class="ui form ">
 		  	<div class="inline fields" style="float:left">
-		  	<div class="eight wide field">
+		    <div class="four wide field">
+		      <label>Entries per page</label>
+		      <input type="number" value="10">
+		    </div>
+		  	<div class="five wide field">
 		      <label>Start Date</label>
 		      <input type="date">
 		    </div>
-		    <div class="eight wide field">
+		    <div class="five wide field">
 		      <label>End Date</label>
 		      <input type="date">
 		    </div>
 		    </div>
 		    <div class="three wide feild" style="float:right">
-		      <button id="addPayableBtn" class="ui button teal">Add Receivable</button>
+		      <button id="addReceivableBtn" class="ui button teal">Add Receivable</button>
 		    </div>
 		    <div class="three wide feild" style="float:right">
 			    <button class="ui button teal">Print</button>
@@ -297,6 +300,18 @@
 		<b>Total Amount: </b> P30,700.00</p>
 	</div>
 		<div class="ui bottom attached tab segment" data-tab="suppliersTab" style="padding-bottom:50px">
+			<div class="ui form ">
+		  	<div class="inline fields" style="float:left">
+		    <div class="eleven wide field">
+		      <label>Entries per page</label>
+		      <input type="number" value="10">
+		    </div>
+		  	
+		    </div>
+		    <div class="three wide feild" style="float:right">
+			    <button class="ui button teal" id="addSupplierBtn">Add Suppliers</button>
+		    </div>
+		  </div>
 			<table class="ui celled padded table">
 			  <thead>
 			    <tr>
@@ -312,7 +327,7 @@
 			  	
 			  </tbody>
 			  </table>
-		  <button class="ui button teal">Add Suppliers</button>
+		  
 			<div class="ui pagination menu right" style="float:right">
 			  <a class="active item">
 			    1
@@ -332,7 +347,19 @@
 			</div>
 		</div>
 		<div class="ui bottom attached tab segment" data-tab="customersTab" style="padding-bottom:50px">
-						<table class="ui celled padded table">
+			<div class="ui form ">
+		  	<div class="inline fields" style="float:left">
+		    <div class="eleven wide field">
+		      <label>Entries per page</label>
+		      <input type="number" value="10">
+		    </div>
+		  	
+		    </div>
+		    <div class="three wide feild" style="float:right">
+			    <button class="ui button teal" id="addCustomerBtn">Add Customers</button>
+		    </div>
+		  </div>
+			<table class="ui celled padded table">
 			  <thead>
 			    <tr>
 			    <th>Name <i class="dropdown icon link" style="float:right"></i></th>
@@ -347,7 +374,7 @@
 			  	
 			  </tbody>
 			  </table>
-			   <button class="ui button teal">Add Customers</button>
+			   
 			<div class="ui pagination menu right" style="float:right">
 			  <a class="active item">
 			    1
@@ -407,6 +434,67 @@
 		    <div class="ui cancel button teal">Cancel</div>
 		</div>
 </div>
+
+<!-- RECEIVABLE INFORMATION -->
+<div id="addReceivable" class="ui modal">
+  <div class="header">Account Receivable</div>
+  <div class="content">
+    <form class="ui form">
+    	
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Customer Name</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="text">
+		    </div>
+		</div>
+		
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Official Receipt Number</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="text">
+		    </div>
+		</div>
+		
+		<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Amount</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="number">
+		    </div>
+		</div>
+		
+		<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Transaction Date</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="date">
+		    </div>
+		</div>
+		
+		<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Due Date</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="date">
+		    </div>
+		</div>
+		
+    	
+    </form>
+  </div>
+  <div class="actions">
+    <div class="ui approve button teal">Save</div>
+    <div class="ui button teal">Add More</div>
+    <div class="ui cancel button teal">Cancel</div>
+  </div>
+</div> 
 
 <!-- PAYABLE INFORMATION -->
 <div id="addPayable" class="ui modal">
@@ -470,8 +558,8 @@
 </div> 
 
 
-<!-- SUPPLIER INFORMATION
-<div id="addPayable" class="ui modal">
+<!-- SUPPLIER INFORMATION  -->
+<div id="addSupplier" class="ui modal">
   <div class="header">Supplier</div>
   <div class="content">
     <form class="ui form">
@@ -527,7 +615,84 @@
     <div class="ui button">Add More</div>
     <div class="ui cancel button">Cancel</div>
   </div>
-</div> -->
+</div>
+
+<!-- CUSTOMER INFORMATION  -->
+<div id="addCustomer" class="ui modal">
+  <div class="header">Supplier</div>
+  <div class="content">
+    <form class="ui form">
+    	
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Name</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="text">
+		    </div>
+		</div>
+		
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Address</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="text">
+		    </div>
+		</div>
+		
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Contact Number</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="text">
+		    </div>
+		</div>
+		
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Terms</label>      
+		    </div>
+		    <div class="seven wide field">
+		      <input type="number">
+		    </div>
+		    <div class="seven wide field">
+		      <select class="ui fluid dropdown">
+    			<option value="">days</option>
+    			<option value="">weeks</option>
+    			<option value="">months</option>
+    			<option value="">years</option>
+    		  </select>
+		    </div>
+		</div>    	
+    	
+    </form>
+  </div>
+  <div class="actions">
+    <div class="ui approve button">Save</div>
+    <div class="ui button">Add More</div>
+    <div class="ui cancel button">Cancel</div>
+  </div>
+</div>
+
+<div id="logout" class="ui small test modal transition" style="margin-top: -92.5px;">
+    <div class="header">
+      Log out
+    </div>
+    <div class="content">
+      <p>Are you sure you want to log out of your account</p>
+    </div>
+    <div class="actions">
+      <div class="ui negative button">
+        No
+      </div>
+      <div class="ui positive right labeled icon button">
+        Yes
+        <i class="checkmark icon"></i>
+      </div>
+    </div>
+  </div>
 
 </body>
 <script type="text/javascript">
@@ -543,8 +708,24 @@
 		$('#addPayable').modal('show');
 	});
 	
+	$('#addReceivableBtn').click(function(){
+		$('#addReceivable').modal('show');
+	});
+	
+	$('#addSupplierBtn').click(function(){
+		$('#addSupplier').modal('show');
+	});
+	
+	$('#addCustomerBtn').click(function(){
+		$('#addCustomer').modal('show');
+	});
+	
 	$('#settingsLink').click(function(){
 		$('#userSettings').modal('show');
+	});
+	
+	$('#logoutLink').click(function(){
+		$('#logout').modal('show');
 	});
 
 </script>

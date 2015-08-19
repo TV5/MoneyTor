@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_vx-FwUWBEeWQGNqwIb6l3g" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_vx-FwkWBEeWQGNqwIb6l3g" bindingContexts="_vx-FxEWBEeWQGNqwIb6l3g">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;login.html&quot; tooltip=&quot;MoneyTor/war/login.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoneyTor/war/login.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;main.html&quot; tooltip=&quot;MoneyTor/war/main.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoneyTor/war/main.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;login.html&quot; tooltip=&quot;MoneyTor/war/WEB-INF/login.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoneyTor/war/WEB-INF/login.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;login&quot; tooltip=&quot;MoneyTor/war/WEB-INF/login&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoneyTor/war/WEB-INF/login&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.html&quot; tooltip=&quot;MoneyTor/war/index.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoneyTor/war/index.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;users.html&quot; tooltip=&quot;MoneyTor/war/users.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoneyTor/war/users.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;login.html&quot; tooltip=&quot;MoneyTor/war/login.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoneyTor/war/login.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;main.html&quot; tooltip=&quot;MoneyTor/war/main.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoneyTor/war/main.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;login.html&quot; tooltip=&quot;MoneyTor/war/WEB-INF/login.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoneyTor/war/WEB-INF/login.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;login&quot; tooltip=&quot;MoneyTor/war/WEB-INF/login&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoneyTor/war/WEB-INF/login&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.html&quot; tooltip=&quot;MoneyTor/war/index.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoneyTor/war/index.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_vx-FwkWBEeWQGNqwIb6l3g" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_ysTv8UWBEeWQGNqwIb6l3g" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
@@ -97,7 +97,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_1RcmPEWBEeWQGNqwIb6l3g" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_1RS1MkWBEeWQGNqwIb6l3g"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_1RcmPUWBEeWQGNqwIb6l3g" containerData="8101" selectedElement="_1RcmR0WBEeWQGNqwIb6l3g">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_1RcmPUWBEeWQGNqwIb6l3g" containerData="8101" selectedElement="_1RcmPkWBEeWQGNqwIb6l3g">
               <children xsi:type="basic:PartSashContainer" xmi:id="_1RcmPkWBEeWQGNqwIb6l3g" containerData="7746" selectedElement="_1RcmP0WBEeWQGNqwIb6l3g" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_1RcmP0WBEeWQGNqwIb6l3g" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_1OnUoEWBEeWQGNqwIb6l3g"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_1RcmQEWBEeWQGNqwIb6l3g" visible="false" containerData="2500" selectedElement="_1RcmQ0WBEeWQGNqwIb6l3g">
@@ -119,7 +119,6 @@
               <children xsi:type="basic:PartStack" xmi:id="_1RcmR0WBEeWQGNqwIb6l3g" elementId="bottom" containerData="2254" selectedElement="_1RcmTEWBEeWQGNqwIb6l3g">
                 <tags>newtablook</tags>
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
-                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_1RcmSEWBEeWQGNqwIb6l3g" elementId="org.eclipse.ui.views.ProblemView" ref="_1QGiY0WBEeWQGNqwIb6l3g"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_1RcmSUWBEeWQGNqwIb6l3g" elementId="org.eclipse.jdt.ui.JavadocView" ref="_1QGiZEWBEeWQGNqwIb6l3g"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_1RcmSkWBEeWQGNqwIb6l3g" elementId="org.eclipse.jdt.ui.SourceView" ref="_1QGiZUWBEeWQGNqwIb6l3g"/>
@@ -159,10 +158,11 @@
       <toolbar xmi:id="_301I8UWBEeWQGNqwIb6l3g" elementId="org.eclipse.ui.internal.introview"/>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_1OnUoEWBEeWQGNqwIb6l3g" elementId="org.eclipse.ui.editorss" selectedElement="_1OnUoUWBEeWQGNqwIb6l3g">
-      <children xsi:type="basic:PartStack" xmi:id="_1OnUoUWBEeWQGNqwIb6l3g" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_VXgU8EWIEeWtDuSvne2pjg">
+      <children xsi:type="basic:PartStack" xmi:id="_1OnUoUWBEeWQGNqwIb6l3g" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_TVabUEaOEeWoU_I0k6klpQ">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_NzAbAEWDEeWQGNqwIb6l3g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="index.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.html&quot; partName=&quot;index.html&quot; title=&quot;index.html&quot; tooltip=&quot;MoneyTor/war/index.html&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoneyTor/war/index.html&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;793&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -176,10 +176,18 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_VXgU8EWIEeWtDuSvne2pjg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;main.html&quot; partName=&quot;main.html&quot; title=&quot;main.html&quot; tooltip=&quot;MoneyTor/war/main.html&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoneyTor/war/main.html&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;19824&quot; selectionTopPixel=&quot;1499&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;main.html&quot; partName=&quot;main.html&quot; title=&quot;main.html&quot; tooltip=&quot;MoneyTor/war/main.html&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoneyTor/war/main.html&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2776&quot; selectionTopPixel=&quot;779&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
           <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_TVabUEaOEeWoU_I0k6klpQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="users.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;users.html&quot; partName=&quot;users.html&quot; title=&quot;users.html&quot; tooltip=&quot;MoneyTor/war/users.html&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoneyTor/war/users.html&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;10338&quot; selectionTopPixel=&quot;4828&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
+          <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -231,8 +239,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_XzgPkEWDEeWQGNqwIb6l3g" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -302,7 +308,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ztm04kWBEeWQGNqwIb6l3g" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ETXP4EZ3EeWy5sg7rzsPYA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_v4tm-kWBEeWQGNqwIb6l3g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ZC-tAEaMEeWoU_I0k6klpQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_v4tm-kWBEeWQGNqwIb6l3g"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ztm040WBEeWQGNqwIb6l3g" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -326,7 +332,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ztv-0EWBEeWQGNqwIb6l3g" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ETqx4EZ3EeWy5sg7rzsPYA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_v4b6IEWBEeWQGNqwIb6l3g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ZDXHgEaMEeWoU_I0k6klpQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_v4b6IEWBEeWQGNqwIb6l3g"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ztv-0UWBEeWQGNqwIb6l3g" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
