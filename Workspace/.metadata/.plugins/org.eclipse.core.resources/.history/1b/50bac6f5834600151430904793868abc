@@ -698,10 +698,6 @@
 		$('#addSupplier').modal('show');
 	});
 	
-	$('#addCustomerBtn').click(function(){
-		$('#addCustomer').modal('show');
-	});
-	
 	$('#settingsLink').click(function(){
 		$('#userSettings').modal('show');
 	});
