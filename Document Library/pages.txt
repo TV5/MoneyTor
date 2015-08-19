@@ -1,0 +1,39 @@
+Note:	Pls kog add ug tarong nga dummy data.
+
+Login -> Pal
+	- Log in
+	- Invalid username/password
+
+Home page 
+	- Payables Tab -> Sonia
+		- View
+		- Add
+		- Edit
+	- Receivables Tab -> Sonia
+		- View
+		- Add
+		- Edit		
+	- Suppliers Tab -> DK
+		- View
+		- Add
+		- Edit
+	- Customers Tab -> DK
+		- View
+		- Add
+		- Edit
+
+User Settings -> Pal
+	- User Settings
+	- Change Password
+
+Users Page
+	- Employees Tab -> Ivan
+		- View
+		- Add
+		- Edit
+	- Administrators Tab -> Ivan
+		- View
+		- Add
+		- Edit
+
+Logout (modal rani, prompt lang) -> Pal
