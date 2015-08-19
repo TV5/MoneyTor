@@ -356,7 +356,7 @@
 		  	
 		    </div>
 		    <div class="three wide feild" style="float:right">
-			    <button class="ui button teal">Add Customers</button>
+			    <button class="ui button teal">Add Suppliers</button>
 		    </div>
 		  </div>
 			<table class="ui celled padded table">

@@ -107,17 +107,17 @@
 	<div class="ui bottom attached active tab segment" data-tab="payablesTab" style="padding-bottom:50px">
 	  <div class="ui form ">
 	  	<div class="inline fields" style="float:left">
-	    <div class="four wide field">
-	      <label>Entries per page</label>
-	      <input type="number" value="10">
-	    </div>
-	  	<div class="five wide field">
+	  	<div class="six wide field">
 	      <label>Start Date</label>
 	      <input type="date">
 	    </div>
-	    <div class="five wide field">
+	    <div class="six wide field">
 	      <label>End Date</label>
 	      <input type="date">
+	    </div>
+	    <div class="four wide feild" style="float:right">
+	      <label>Show</label>
+	      <input type="number">
 	    </div>
 	    </div>
 	    <div class="three wide feild" style="float:right">
@@ -203,17 +203,13 @@
 	</div>
 	
 		<div class="ui bottom attached tab segment" data-tab="receivablesTab" style="padding-bottom:50px">
-		<div class="ui form ">
+				  <div class="ui form ">
 		  	<div class="inline fields" style="float:left">
-		    <div class="four wide field">
-		      <label>Entries per page</label>
-		      <input type="number" value="10">
-		    </div>
-		  	<div class="five wide field">
+		  	<div class="eight wide field">
 		      <label>Start Date</label>
 		      <input type="date">
 		    </div>
-		    <div class="five wide field">
+		    <div class="eight wide field">
 		      <label>End Date</label>
 		      <input type="date">
 		    </div>
@@ -300,18 +296,6 @@
 		<b>Total Amount: </b> P30,700.00</p>
 	</div>
 		<div class="ui bottom attached tab segment" data-tab="suppliersTab" style="padding-bottom:50px">
-			<div class="ui form ">
-		  	<div class="inline fields" style="float:left">
-		    <div class="eleven wide field">
-		      <label>Entries per page</label>
-		      <input type="number" value="10">
-		    </div>
-		  	
-		    </div>
-		    <div class="three wide feild" style="float:right">
-			    <button class="ui button teal">Add Suppliers</button>
-		    </div>
-		  </div>
 			<table class="ui celled padded table">
 			  <thead>
 			    <tr>
@@ -327,7 +311,7 @@
 			  	
 			  </tbody>
 			  </table>
-		  
+		  <button class="ui button teal">Add Suppliers</button>
 			<div class="ui pagination menu right" style="float:right">
 			  <a class="active item">
 			    1
@@ -347,19 +331,7 @@
 			</div>
 		</div>
 		<div class="ui bottom attached tab segment" data-tab="customersTab" style="padding-bottom:50px">
-			<div class="ui form ">
-		  	<div class="inline fields" style="float:left">
-		    <div class="eleven wide field">
-		      <label>Entries per page</label>
-		      <input type="number" value="10">
-		    </div>
-		  	
-		    </div>
-		    <div class="three wide feild" style="float:right">
-			    <button class="ui button teal">Add Customers</button>
-		    </div>
-		  </div>
-			<table class="ui celled padded table">
+						<table class="ui celled padded table">
 			  <thead>
 			    <tr>
 			    <th>Name <i class="dropdown icon link" style="float:right"></i></th>
@@ -374,7 +346,7 @@
 			  	
 			  </tbody>
 			  </table>
-			   
+			   <button class="ui button teal">Add Customers</button>
 			<div class="ui pagination menu right" style="float:right">
 			  <a class="active item">
 			    1
