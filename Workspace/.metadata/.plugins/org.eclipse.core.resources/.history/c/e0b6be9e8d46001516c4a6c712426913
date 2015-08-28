@@ -66,6 +66,7 @@
 </head>
 <body>
 
+
 <div class="ui container">
 	<div class="ui text menu firstmenu" width="100%">
 	  <img src="assets/images/logo.png" style="width:30px;height:30px;margin-top:5px">
@@ -675,7 +676,7 @@
   </div>
 </div>
 
-<div id="logout" class="ui small test modal transition" style="margin-top: -92.5px;">
+<div id="logout" class="ui small test modal transition" style="margin-top: -92.5px; display: block !important;">
     <div class="header">
       Log out
     </div>

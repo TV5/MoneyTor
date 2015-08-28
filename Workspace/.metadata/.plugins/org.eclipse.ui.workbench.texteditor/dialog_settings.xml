@@ -13,18 +13,21 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="name" key="selection"/>
+		<item value="" key="selection"/>
 		<list key="findhistory">
+			<item value="supplier"/>
+			<item value="customer"/>
+			<item value="four"/>
 			<item value="name"/>
 			<item value="palsmiley"/>
 			<item value="palsm"/>
 			<item value="BUTTON"/>
 			<item value="moneytor"/>
-			<item value="moneytir"/>
-			<item value="addP"/>
-			<item value="font"/>
 		</list>
 		<list key="replacehistory">
+			<item value="administrator"/>
+			<item value="employee"/>
+			<item value="five"/>
 			<item value="josephpalmaras"/>
 		</list>
 	</section>

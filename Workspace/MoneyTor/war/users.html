@@ -89,216 +89,16 @@
 	  
 	</div>
 	<div class="ui top attached tabular menu">
-	  <a data-tab="payablesTab" class="item active" >
-	    PAYABLES
+	  <a data-tab="employeesTab" class="item active" >
+	    EMPLOYEES
 	  </a>
 	  <a data-tab="receivablesTab" class="item">
-	    RECEIVABLES
-	  </a>
-	  <a data-tab="suppliersTab" class="item">
-	    SUPPLIERS
-	  </a>
-	  <a data-tab="customersTab" class="item">
-	    CUSTOMERS
+	    ADMINISTRATORS
 	  </a>
 	</div>
 
-	<div class="ui bottom attached active tab segment" data-tab="payablesTab" style="padding-bottom:50px">
-	  <div class="ui form ">
-	  	<div class="inline fields" style="float:left">
-	    <div class="four wide field">
-	      <label>Entries per page</label>
-	      <input type="number" value="10">
-	    </div>
-	  	<div class="five wide field">
-	      <label>Start Date</label>
-	      <input type="date">
-	    </div>
-	    <div class="five wide field">
-	      <label>End Date</label>
-	      <input type="date">
-	    </div>
-	    </div>
-	    <div class="three wide feild" style="float:right">
-	      <button id="addPayableBtn" class="ui button teal">Add Payable</button>
-	    </div>
-	    <div class="three wide feild" style="float:right">
-		    <button class="ui button teal">Print</button>
-	    </div>
-	  </div>
-	  <table class="ui celled padded table">
-	  <thead>
-	    <tr>
-	    <th>OR No. <i class="dropdown icon link" style="float:right"></i></th>
-	    <th>Supplier <i class="dropdown icon link" style="float:right"></i></th>
-	    <th>Amount <i class="dropdown icon link" style="float:right"></i></th>
-	    <th>Transaction Date <i class="dropdown icon link" style="float:right"></i></th>
-	    <th>Due Date <i class="dropdown icon link" style="float:right"></i></th>
-	  	</tr>
-	  </thead>
-	  <tbody>
-	  	<tr>
-	    <th>001823</th>
-	    <th><a href="#">Ivan Wesley Chua</a></th>
-	    <th>P10,000.00</th>
-	    <th>August 18, 2015</th>
-	    <th>September 18, 2015</th>
-	  	</tr>
-	  	<tr>
-	    <th>001724</th>
-	    <th><a href="#">Jean Lim</a></th>
-	    <th>P13,400.00</th>
-	    <th>August 12, 2015</th>
-	    <th>September 19, 2015</th>
-	  	</tr>
-	  	<tr>
-	    <th>001611</th>
-	    <th><a href="#">Klifford Kho</a></th>
-	    <th>P1,300.00</th>
-	    <th>August 11, 2015</th>
-	    <th>October 1, 2015</th>
-	  	</tr>
-	  	<tr>
-	    <th>001610</th>
-	    <th><a href="#">Curt Co</a></th>
-	    <th>P100.00</th>
-	    <th>August 11, 2015</th>
-	    <th>October 1, 2015</th>
-	  	</tr>
-	  	<tr>
-	    <th>001599</th>
-	    <th><a href="#">Kiefer Lim</a></th>
-	    <th>P54,000.00</th>
-	    <th>August 9, 2015</th>
-	    <th>January 12, 2016</th>
-	  	</tr>
-	  	<tr>
-	    <th>001566</th>
-	    <th><a href="#">George Ong</a></th>
-	    <th>P500.00</th>
-	    <th>August 8, 2015</th>
-	    <th>September 18, 2015</th>
-	  	</tr>
-	  </tbody>
-	  </table>
-	<div class="ui pagination menu right" style="float:right">
-	  <a class="active item">
-	    1
-	  </a>
-	  <div class="disabled item">
-	    ...
-	  </div>
-	  <a class="item">
-	    10
-	  </a>
-	  <a class="item">
-	    11
-	  </a>
-	  <a class="item">
-	    12
-	  </a>
-	</div>
-	<b>Total Amount: </b> P30,700.00</p>
-	</div>
 	
-		<div class="ui bottom attached tab segment" data-tab="receivablesTab" style="padding-bottom:50px">
-		<div class="ui form ">
-		  	<div class="inline fields" style="float:left">
-		    <div class="four wide field">
-		      <label>Entries per page</label>
-		      <input type="number" value="10">
-		    </div>
-		  	<div class="five wide field">
-		      <label>Start Date</label>
-		      <input type="date">
-		    </div>
-		    <div class="five wide field">
-		      <label>End Date</label>
-		      <input type="date">
-		    </div>
-		    </div>
-		    <div class="three wide feild" style="float:right">
-		      <button id="addReceivableBtn" class="ui button teal">Add Receivable</button>
-		    </div>
-		    <div class="three wide feild" style="float:right">
-			    <button class="ui button teal">Print</button>
-		    </div>
-		  </div>
-		  <table class="ui celled padded table">
-		  <thead>
-		    <tr>
-		    <th>OR No. <i class="dropdown icon link" style="float:right"></i></th>
-		    <th>Customer <i class="dropdown icon link" style="float:right"></i></th>
-		    <th>Amount <i class="dropdown icon link" style="float:right"></i></th>
-		    <th>Transaction Date <i class="dropdown icon link" style="float:right"></i></th>
-		    <th>Due Date <i class="dropdown icon link" style="float:right"></i></th>
-		  	</tr>
-		  </thead>
-		  <tbody>
-		  	<tr>
-		    <th>001823</th>
-		    <th><a href="#">Ivan Wesley Chua</a></th>
-		    <th>P10,000.00</th>
-		    <th>August 18, 2015</th>
-		    <th>September 18, 2015</th>
-		  	</tr>
-		  	<tr>
-		    <th>001724</th>
-		    <th><a href="#">Jean Lim</a></th>
-		    <th>P13,400.00</th>
-		    <th>August 12, 2015</th>
-		    <th>September 19, 2015</th>
-		  	</tr>
-		  	<tr>
-		    <th>001611</th>
-		    <th><a href="#">Klifford Kho</a></th>
-		    <th>P1,300.00</th>
-		    <th>August 11, 2015</th>
-		    <th>October 1, 2015</th>
-		  	</tr>
-		  	<tr>
-		    <th>001610</th>
-		    <th><a href="#">Curt Co</a></th>
-		    <th>P100.00</th>
-		    <th>August 11, 2015</th>
-		    <th>October 1, 2015</th>
-		  	</tr>
-		  	<tr>
-		    <th>001599</th>
-		    <th><a href="#">Kiefer Lim</a></th>
-		    <th>P54,000.00</th>
-		    <th>August 9, 2015</th>
-		    <th>January 12, 2016</th>
-		  	</tr>
-		  	<tr>
-		    <th>001566</th>
-		    <th><a href="#">George Ong</a></th>
-		    <th>P500.00</th>
-		    <th>August 8, 2015</th>
-		    <th>September 18, 2015</th>
-		  	</tr>
-		  </tbody>
-		  </table>
-		<div class="ui pagination menu right" style="float:right">
-		  <a class="active item">
-		    1
-		  </a>
-		  <div class="disabled item">
-		    ...
-		  </div>
-		  <a class="item">
-		    10
-		  </a>
-		  <a class="item">
-		    11
-		  </a>
-		  <a class="item">
-		    12
-		  </a>
-		</div>
-		<b>Total Amount: </b> P30,700.00</p>
-	</div>
-		<div class="ui bottom attached tab segment" data-tab="suppliersTab" style="padding-bottom:50px">
+		<div class="ui bottom attached tab segment active" data-tab="employeesTab" style="padding-bottom:50px">
 			<div class="ui form ">
 		  	<div class="inline fields" style="float:left">
 		    <div class="eleven wide field">
@@ -308,7 +108,7 @@
 		  	
 		    </div>
 		    <div class="three wide feild" style="float:right">
-			    <button class="ui button teal" id="addSupplierBtn">Add Suppliers</button>
+			    <button class="ui button teal" id="addemployeeBtn">Add employees</button>
 		    </div>
 		  </div>
 			<table class="ui celled padded table">
@@ -345,7 +145,7 @@
 			  </a>
 			</div>
 		</div>
-		<div class="ui bottom attached tab segment" data-tab="customersTab" style="padding-bottom:50px">
+		<div class="ui bottom attached tab segment" data-tab="administratorsTab" style="padding-bottom:50px">
 			<div class="ui form ">
 		  	<div class="inline fields" style="float:left">
 		    <div class="eleven wide field">
@@ -355,7 +155,7 @@
 		  	
 		    </div>
 		    <div class="three wide feild" style="float:right">
-			    <button class="ui button teal" id="addCustomerBtn">Add Customers</button>
+			    <button class="ui button teal" id="addadministratorBtn">Add administrators</button>
 		    </div>
 		  </div>
 			<table class="ui celled padded table">
@@ -442,7 +242,7 @@
     	
     	<div class="inline fields">
 		    <div class="two wide field">
-		      <label>Customer Name</label>      
+		      <label>administrator Name</label>      
 		    </div>
 		    <div class="fourteen wide field">
 		      <input type="text">
@@ -503,7 +303,7 @@
     	
     	<div class="inline fields">
 		    <div class="two wide field">
-		      <label>Supplier Name</label>      
+		      <label>employee Name</label>      
 		    </div>
 		    <div class="fourteen wide field">
 		      <input type="text">
@@ -557,9 +357,9 @@
 </div> 
 
 
-<!-- SUPPLIER INFORMATION  -->
-<div id="addSupplier" class="ui modal">
-  <div class="header">Supplier</div>
+<!-- employee INFORMATION  -->
+<div id="addemployee" class="ui modal">
+  <div class="header">employee</div>
   <div class="content">
     <form class="ui form">
     	
@@ -616,9 +416,9 @@
   </div>
 </div>
 
-<!-- CUSTOMER INFORMATION  -->
-<div id="addCustomer" class="ui modal">
-  <div class="header">Supplier</div>
+<!-- administrator INFORMATION  -->
+<div id="addadministrator" class="ui modal">
+  <div class="header">employee</div>
   <div class="content">
     <form class="ui form">
     	
@@ -702,21 +502,13 @@
 	});  */    
 	
 	$('.top.menu .item').tab();
-
-	$('#addPayableBtn').click(function(){
-		$('#addPayable').modal('show');
+	
+	$('#addemployeeBtn').click(function(){
+		$('#addemployee').modal('show');
 	});
 	
-	$('#addReceivableBtn').click(function(){
-		$('#addReceivable').modal('show');
-	});
-	
-	$('#addSupplierBtn').click(function(){
-		$('#addSupplier').modal('show');
-	});
-	
-	$('#addCustomerBtn').click(function(){
-		$('#addCustomer').modal('show');
+	$('#addadministratorBtn').click(function(){
+		$('#addadministrator').modal('show');
 	});
 	
 	$('#settingsLink').click(function(){

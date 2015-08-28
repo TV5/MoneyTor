@@ -65,6 +65,7 @@
   </style>
 </head>
 <body>
+<link rel="import" href="login.html">
 
 <div class="ui container">
 	<div class="ui text menu firstmenu" width="100%">
