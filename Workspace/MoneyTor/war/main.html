@@ -16,7 +16,7 @@
   <link rel="stylesheet" type="text/css" href="../dist/components/header.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/image.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/menu.css">
-
+  <link rel="stylesheet" type="text/css" href="../dist/components/popup.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/divider.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/segment.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/form.css">
@@ -37,6 +37,7 @@
   <script src="../dist/components/modal.min.js"></script>
   <script src="../dist/components/dimmer.min.js"></script>
   <script src="../dist/components/transition.min.js"></script>
+  <script src="../dist/components/popup.min.js"></script>
 
   <style type="text/css">
     body {
@@ -144,10 +145,10 @@
 	  	</tr>
 	  </thead>
 	  <tbody>
-	  	<tr>
+	  	<tr id="hehe" onmouseover="popup()" data-content="Add users to your feed" >
 	  	<th>10</th>
 	    <th>001823</th>
-	    <th><a href="#">Ivan Wesley Chua</a>   <a href="#" id="eicon" onClick="editData()"><i class="edit icon"></i></a></th>
+	    <th><a href="#">Ivan Wesley Chua</a>   <a href="#" id="eicon" onClick="editData()"><i class="edit icon"> </i></a></th>
 	    <th>P10,000.00</th>
 	    <th>August 18, 2015</th>
 	    <th>September 18, 2015</th>
@@ -334,20 +335,61 @@
 			<table class="ui celled padded table">
 			  <thead>
 			    <tr>
+			    <th>ID <i class="dropdown icon link" style="float:right"></i></th>
 			    <th>Name <i class="dropdown icon link" style="float:right"></i></th>
 			    <th>Address <i class="dropdown icon link" style="float:right"></i></th>
 			    <th>Contact <i class="dropdown icon link" style="float:right"></i></th>
 			    <th>Terms <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Date Created <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Date Updated <i class="dropdown icon link" style="float:right"></i></th>
 			  	</tr>
 			  </thead>
 			  <tbody>
+			  	<tr id="hehe" data-position="bottom left" class="inline" data-html="Updated by: hw_trisha <br/> Created by: hw_trisha <br/> Date updated: 08/14/2015">
+			  	<th >10</th>
+			    <th><a href="#">Ivan Sua </a>   <a href="#" id="eicon" onClick="editSupplier()"><i class="edit icon"></i></a></th>
+			    <th>Mainland, China</th>	
+			    <th>09184587896</th>
+			    <th>14 months</th>
+			  	</tr>
+			  	<tr id="hehe" data-position="bottom left" class="inline" data-html="Updated by: hw_trisha <br/> Created by: hw_trisha <br/> Date updated: 08/14/2015">
+			  	<th >10</th>
+			    <th><a href="#">Jacq Lim </a>   <a href="#" id="eicon" onClick="editSupplier()"><i class="edit icon"></i></a></th>
+			    <th>P. del Rosario St., Cebu City</th>	
+			    <th>09164587892</th>
+			    <th>17 months</th>
+			  	</tr>
+			  	<tr id="hehe" data-position="bottom left" class="inline" data-html="Updated by: hw_trisha <br/> Created by: hw_trisha <br/> Date updated: 08/14/2015">
+			  	<th >10</th>
+			    <th><a href="#">Lee Roy </a>   <a href="#" id="eicon" onClick="editSupplier()"><i class="edit icon"></i></a></th>
+			    <th>Mountain View, California</th>	
+			    <th>09334587879</th>
+			    <th>15 months</th>
+			    <tr id="hehe" data-position="bottom left" class="inline" data-html="Updated by: hw_trisha <br/> Created by: hw_trisha <br/> Date updated: 08/14/2015">
+			  	<th >12</th>
+			    <th><a href="#">Fish Dior </a>   <a href="#" id="eicon" onClick="editSupplier()"><i class="edit icon"></i></a></th>
+			    <th>Mainland, China</th>	
+			    <th>09178429522</th>
+			    <th>13 months</th>
+			  	</tr>
+			  	<tr id="hehe" data-position="bottom left" class="inline" data-html="Updated by: hw_trisha <br/> Created by: hw_trisha <br/> Date updated: 08/14/2015">
+			  	<th >14</th>
+			    <th><a href="#">Jackson Wang </a>   <a href="#" id="eicon" onClick="editSupplier()"><i class="edit icon"></i></a></th>
+			    <th>Perth, Australia</th>	
+			    <th>09478529688</th>
+			    <th>10 months</th>
+			  	</tr>
+			  	<tr id="hehe" data-position="bottom left" class="inline" data-html="Updated by: hw_trisha <br/> Created by: hw_trisha <br/> Date updated: 08/14/2015">
+			  	<th >50</th>
+			    <th><a href="#">Iron Pal </a>   <a href="#" id="eicon" onClick="editSupplier()"><i class="edit icon"></i></a></th>
+			    <th>Colon St., Cebu City</th>	
+			    <th>09428143096</th>
+			    <th>6 months</th>
+			  	</tr>
 			  	
+			  	</tr>
 			  </tbody>
 			  </table>
 		  
-			<div class="ui pagination menu right" style="float:right">
+			<div class="ui pagination menu right"  style="float:right">
 			  <a class="active item">
 			    1
 			  </a>
@@ -381,16 +423,57 @@
 			<table class="ui celled padded table">
 			  <thead>
 			    <tr>
+			    <th>ID <i class="dropdown icon link" style="float:right"></i></th>
 			    <th>Name <i class="dropdown icon link" style="float:right"></i></th>
 			    <th>Address <i class="dropdown icon link" style="float:right"></i></th>
 			    <th>Contact <i class="dropdown icon link" style="float:right"></i></th>
 			    <th>Terms <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Date Created <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Date Updated <i class="dropdown icon link" style="float:right"></i></th>
 			  	</tr>
 			  </thead>
 			  <tbody>
+			  	<tr id="hehe" data-position="bottom left" class="inline" data-html="Updated by: hw_trisha <br/> Created by: hw_trisha <br/> Date updated: 08/14/2015">
+			  	<th >10</th>
+			    <th><a href="#">Ivan Suah </a>   <a href="#" id="eicon" onClick="editCustomer()"><i class="edit icon"></i></a></th>
+			    <th>Mainland, China</th>	
+			    <th>09184587896</th>
+			    <th>14 months</th>
+			  	</tr>
+			  	<tr id="hehe" data-position="bottom left" class="inline" data-html="Updated by: hw_trisha <br/> Created by: hw_trisha <br/> Date updated: 08/14/2015">
+			  	<th >10</th>
+			    <th><a href="#">Jacq Lim </a>   <a href="#" id="eicon" onClick="editCustomer()"><i class="edit icon"></i></a></th>
+			    <th>P. del Rosario St., Cebu City</th>	
+			    <th>09164587892</th>
+			    <th>17 months</th>
+			  	</tr>
+			  	<tr id="hehe" data-position="bottom left" class="inline" data-html="Updated by: hw_trisha <br/> Created by: hw_trisha <br/> Date updated: 08/14/2015">
+			  	<th >10</th>
+			    <th><a href="#">Lee Roy </a>   <a href="#" id="eicon" onClick="editCustomer()"><i class="edit icon"></i></a></th>
+			    <th>Mountain View, California</th>	
+			    <th>09334587879</th>
+			    <th>15 months</th>
+			    <tr id="hehe" data-position="bottom left" class="inline" data-html="Updated by: hw_trisha <br/> Created by: hw_trisha <br/> Date updated: 08/14/2015">
+			  	<th >12</th>
+			    <th><a href="#">Fish Dior </a>   <a href="#" id="eicon" onClick="editCustomer()"><i class="edit icon"></i></a></th>
+			    <th>Mainland, China</th>	
+			    <th>09178429522</th>
+			    <th>13 months</th>
+			  	</tr>
+			  	<tr id="hehe" data-position="bottom left" class="inline" data-html="Updated by: hw_trisha <br/> Created by: hw_trisha <br/> Date updated: 08/14/2015">
+			  	<th >14</th>
+			    <th><a href="#">Jackson Wang </a>   <a href="#" id="eicon" onClick="editCustomer()"><i class="edit icon"></i></a></th>
+			    <th>Perth, Australia</th>	
+			    <th>09478529688</th>
+			    <th>10 months</th>
+			  	</tr>
+			  	<tr id="hehe" data-position="bottom left" class="inline" data-html="Updated by: hw_trisha <br/> Created by: hw_trisha <br/> Date updated: 08/14/2015">
+			  	<th >50</th>
+			    <th><a href="#">Iron Pal </a>   <a href="#" id="eicon" onClick="editCustomer()"><i class="edit icon"></i></a></th>
+			    <th>Colon St., Cebu City</th>	
+			    <th>09428143096</th>
+			    <th>6 months</th>
+			  	</tr>
 			  	
+			  	</tr>
 			  </tbody>
 			  </table>
 			   
@@ -412,6 +495,7 @@
 			  </a>
 			</div>
 		</div>
+		
 	</div>
 	
 	
@@ -641,8 +725,7 @@
 		    </div>
 		</div>
 		
-    	
-    </form>
+    	</form>
   </div>
   <div class="actions">
     <div class="ui approve button teal">Save</div>
@@ -785,7 +868,7 @@
 
 <!-- CUSTOMER INFORMATION  -->
 <div id="addCustomer" class="ui modal">
-  <div class="header">Supplier</div>
+  <div class="header">Customer</div>
   <div class="content">
     <form class="ui form">
     	
@@ -842,6 +925,123 @@
   </div>
 </div>
 
+<!-- EDIT CUSTOMER INFORMATION  -->
+<div id="editCustomer" class="ui modal">
+  <div class="header"> Edit Customer</div>
+  <div class="content">
+    <form class="ui form">
+    	
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Name</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="text">
+		    </div>
+		</div>
+		
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Address</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="text">
+		    </div>
+		</div>
+		
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Contact Number</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="text">
+		    </div>
+		</div>
+		
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Terms</label>      
+		    </div>
+		    <div class="seven wide field">
+		      <input type="number">
+		    </div>
+		    <div class="seven wide field">
+		      <select class="ui fluid dropdown">
+    			<option value="">days</option>
+    			<option value="">weeks</option>
+    			<option value="">months</option>
+    			<option value="">years</option>
+    		  </select>
+		    </div>
+		</div>    	
+    	
+    </form>
+  </div>
+  <div class="actions">
+    <div class="ui approve button">Save</div>
+    <div class="ui cancel button">Cancel</div>
+  </div>
+</div>
+
+<!-- EDIT SUPPLIER INFORMATION  -->
+<div id="editSupplier" class="ui modal">
+  <div class="header">Edit Supplier</div>
+  <div class="content">
+    <form class="ui form">
+    	
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Name</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="text">
+		    </div>
+		</div>
+		
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Address</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="text">
+		    </div>
+		</div>
+		
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Contact Number</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="text">
+		    </div>
+		</div>
+		
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Terms</label>      
+		    </div>
+		    <div class="seven wide field">
+		      <input type="number">
+		    </div>
+		    <div class="seven wide field">
+		      <select class="ui fluid dropdown">
+    			<option value="">days</option>
+    			<option value="">weeks</option>
+    			<option value="">months</option>
+    			<option value="">years</option>
+    		  </select>
+		    </div>
+		</div>    	
+    	
+    </form>
+  </div>
+  <div class="actions">
+    <div class="ui approve button">Save</div>
+    <div class="ui cancel button">Cancel</div>
+  </div>
+</div>
+
+
 <div id="logout" class="ui small test modal transition" style="margin-top: -92.5px;">
     <div class="header">
       Log out
@@ -859,7 +1059,6 @@
       </div>
     </div>
   </div>
-
 </body>
 <script type="text/javascript">
 
@@ -867,7 +1066,11 @@
 	    $('.ui .item').removeClass('active');
 	    $(this).addClass('active');
 	});  */    
-	
+	$('.inline')
+	  .popup({
+	    inline: true
+	  })
+	;
 	$('.top.menu .item').tab();
 
 	$('#addPayableBtn').click(function(){
@@ -894,11 +1097,21 @@
 		$('#logout').modal('show');
 	});
 	
+	$('#hehe').hover(function(){
+		this.popup();
+	});
+	
 	function editData() {
 	    $('#editPayable').modal('show');
 	}
 	function editDataR() {
 	    $('#editReceivable').modal('show');
+	}
+	function editCustomer() {
+	    $('#editCustomer').modal('show');
+	}
+	function editSupplier() {
+	    $('#editSupplier').modal('show');
 	}
 </script>
 </html>
