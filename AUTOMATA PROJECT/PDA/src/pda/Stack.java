@@ -19,6 +19,13 @@ public class Stack {
         this.stack = new ArrayList<>();
     }
     
+    public Stack(int[] idList) {
+        this.stack = new ArrayList<>();
+        for (int id : idList) {
+            stack.add(new Bag(id));
+        }
+    }
+    
     public void restock(int id) {
         if(isValid(id)){
             Bag bag = new Bag(id);
