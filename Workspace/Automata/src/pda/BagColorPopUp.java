@@ -12,25 +12,35 @@ public class BagColorPopUp extends JFrame {
 
 	public void initComponents() {        
     	
-    	//replace
-    	JLabel replaceBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/replace.png")));
-    	replaceBtn.setBounds(350,170,257,149);
-    	replaceBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+    	//green
+    	JLabel greenBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/replace.png")));
+    	greenBtn.setBounds(20,100,257,149);
+    	greenBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
             	System.out.println("Green Clicked");
             }
         });
-    	add(replaceBtn);
+    	add(greenBtn);
     	
-    	//restock
-    	JLabel restockBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/restock.png")));
-    	restockBtn.setBounds(60,200,258,167);
-    	restockBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+    	//blue
+    	JLabel blueBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/restock.png")));
+    	blueBtn.setBounds(20,200,258,167);
+    	blueBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-            	System.out.println("restock");
+            	System.out.println("Blue Clicked");
             }
         });
-    	add(restockBtn);
+    	add(blueBtn);
+    	
+    	//pink
+    	JLabel pinkBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/restock.png")));
+    	blueBtn.setBounds(40,150,258,167);
+    	blueBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+            	System.out.println("Pink Clicked");
+            }
+        });
+    	add(pinkBtn);
     	
         //settings
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
