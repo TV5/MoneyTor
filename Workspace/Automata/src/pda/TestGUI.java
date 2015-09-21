@@ -107,7 +107,7 @@ public class TestGUI extends JFrame {
     } 
     
     private void restock(java.awt.event.MouseEvent evt, int id) {
-    	TestGUI tG = new TestGUI();
+    	BagColorPopUp bc = new BagColorPopUp();
     	
 //    	System.out.print("restock listener "+stack.stack.size() + "bags ");
 //    	
