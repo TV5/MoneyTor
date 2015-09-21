@@ -6,6 +6,8 @@
 package pda;
 
 
+import java.awt.event.MouseEvent;
+
 import javax.swing.*;
 
 /**
@@ -28,15 +30,28 @@ public class TestGUI extends JFrame {
         idList = new int[] {1,2,3,1};
         Stack stack = new Stack(idList);
         JLabel[] bags = new JLabel[4];
+        final JLabel[] bagLabel = new JLabel[4];
+        
         for(int i=0; i<4; i++) {
-            final Bag bag = stack.stack.get(i);
+        	
+        	final Bag bag = stack.stack.get(i);
             bags[i] = new JLabel(bag.getImage());
             bags[i].setBounds(50*(i+2), 100-((i+2)*20), 400, 400);
             bags[i].setVisible(true);
             bags[i].setName(bag.getColor());
             add(bags[i]);
+            bagLabel[i]=bags[i];
+            
+            final int temp=i;
             System.out.println("color: " + bag.getColor() +bags[i].toString());
+	        bags[i].addMouseListener(new java.awt.event.MouseAdapter() {
+	            public void mouseClicked(java.awt.event.MouseEvent evt) {
+	                bagMouseClicked(evt, bag, bagLabel[temp]);
+	            }
+	        });
+
         }
+
         
         //settings
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
