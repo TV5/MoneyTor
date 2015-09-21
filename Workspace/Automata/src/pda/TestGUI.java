@@ -5,9 +5,6 @@
  */
 package pda;
 
-
-import java.awt.event.MouseEvent;
-
 import javax.swing.*;
 
 /**
@@ -15,6 +12,13 @@ import javax.swing.*;
  * @author Trisha Lim
  */
 public class TestGUI extends JFrame {
+
+    int idList[] = new int[] {1,2,3,1};
+    Stack stack = new Stack(idList);
+    int BAG_QTY = idList.length;
+    int WIDTH = 1366;
+    int HEIGHT = 768;
+    char operation;
     
     public TestGUI() {
         initComponents();
@@ -25,15 +29,19 @@ public class TestGUI extends JFrame {
     }
     
     public void initComponents() {        
+    	
+    	ImageIcon bgImg = new ImageIcon(getClass().getResource("/pda/res/FINAL-BG.png"));
+    	JLabel bg = new JLabel(bgImg);
+    	bg.setVisible(true);
+    	bg.setBounds(0, 0, WIDTH, HEIGHT);
+    	
         //stack
-        int idList[];
-        idList = new int[] {1,2,3,1};
-        Stack stack = new Stack(idList);
-        JLabel[] bags = new JLabel[4];
-        final JLabel[] bagLabel = new JLabel[4];
+        JLabel[] bags = new JLabel[BAG_QTY];
+        final JLabel[] bagLabel = new JLabel[BAG_QTY];
+        JLabel restockBtn = new JLabel(new ImageIcon());
+        JLabel replaceBtn = new JLabel(new ImageIcon());
         
-        for(int i=0; i<4; i++) {
-        	
+        for(int i=0; i<BAG_QTY; i++) {
         	final Bag bag = stack.stack.get(i);
             bags[i] = new JLabel(bag.getImage());
             bags[i].setBounds(50*(i+2), 100-((i+2)*20), 400, 400);
@@ -46,24 +54,23 @@ public class TestGUI extends JFrame {
             System.out.println("color: " + bag.getColor() +bags[i].toString());
 	        bags[i].addMouseListener(new java.awt.event.MouseAdapter() {
 	            public void mouseClicked(java.awt.event.MouseEvent evt) {
-	                bagMouseClicked(evt, bag, bagLabel[temp]);
+	                purchase(evt, bag, bagLabel[temp]);
 	            }
 	        });
-
         }
-
-        
+        add(bg);
         //settings
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-        setSize(1000,700);
+        setSize( WIDTH, HEIGHT);
         setVisible(true);
        
     }
     
-    private void bagMouseClicked(java.awt.event.MouseEvent evt, Bag bag, JLabel label) {                                     
+    private void purchase(java.awt.event.MouseEvent evt, Bag bag, JLabel label) {                                     
         // TODO add your handling code here:
         System.out.println("click" + bag.getColor());
+        stack.purchase();
         label.setVisible(false);
     } 
 

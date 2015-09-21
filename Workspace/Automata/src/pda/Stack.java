@@ -35,6 +35,9 @@ public class Stack {
     
     public void purchase() {
         stack.remove(0);
+        for (Bag bag : stack) {
+        	System.out.print(bag.color);
+        }
     }
     
     public void replace(int id) {
