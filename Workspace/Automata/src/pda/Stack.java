@@ -39,11 +39,15 @@ public class Stack {
         printStack();
     }
     
-    public void replace(int id) {
+    public int replace(int id) {
         if(isValid(id)){
-//            Bag bag = new Bag(id);
-//            stack.set(0, bag);
+        	int index = stack.size()-1;
+        	Bag bag = new Bag(id, index);
+            stack.set(index, bag);
+            printStack();
+            return index;
         }
+        return -1;
     }
     
     public boolean isValid (int id) {

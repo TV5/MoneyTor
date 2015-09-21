@@ -19,6 +19,8 @@ public class TestGUI extends JFrame {
     int WIDTH = 1366;
     int HEIGHT = 768;
     char operation;
+    JLabel[] bags = new JLabel[BAG_QTY];
+    final JLabel[] bagLabel = new JLabel[BAG_QTY];
     
     public TestGUI() {
         initComponents();
@@ -34,14 +36,24 @@ public class TestGUI extends JFrame {
     	bg.setVisible(true);
     	bg.setBounds(0, 0, WIDTH, HEIGHT);
     	
-    	//buttons
-    	//JLabel bg 
+    	//replace
+    	JLabel replaceBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/replace.png")));
+    	replaceBtn.setBounds(300,170,257,149);
+    	replaceBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+            	System.out.println("mouse clicked");
+                replace(evt, 1);
+            }
+        });
+    	add(replaceBtn);
+    	
+    	//restock
+    	JLabel restockBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/restock.png")));
+    	restockBtn.setBounds(10,200,258,167);
+    	add(restockBtn);
     	
         //stack
-        JLabel[] bags = new JLabel[BAG_QTY];
-        final JLabel[] bagLabel = new JLabel[BAG_QTY];
-        JLabel restockBtn = new JLabel(new ImageIcon());
-        JLabel replaceBtn = new JLabel(new ImageIcon());
+        
         
         for(int i=0; i<BAG_QTY; i++) {
         	final Bag bag = stack.stack.get(i);
@@ -86,6 +98,18 @@ public class TestGUI extends JFrame {
         	System.out.println("Can only remove top most element in stack");
         }
     } 
+    
+    private void restock(java.awt.event.MouseEvent evt, int id) {
+    	
+    }
+    
+    private void replace(java.awt.event.MouseEvent evt, int id) {
+    	System.out.print("replace");
+    	int index = stack.replace(id);
+    	if(index>=0){
+    		bags[index].setIcon(stack.stack.get(index).getImage());
+    	}
+    }
 
 }
 

@@ -31,6 +31,7 @@ public class Bag {
         this.setColor();
         this.setImage();
     }
+    
 
 /*    public static Bag generateRandomBag(){
         Random rand = new Random();
