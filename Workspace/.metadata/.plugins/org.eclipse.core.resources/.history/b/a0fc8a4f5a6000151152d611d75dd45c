@@ -50,12 +50,6 @@ public class TestGUI extends JFrame {
     	//restock
     	JLabel restockBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/restock.png")));
     	restockBtn.setBounds(60,200,258,167);
-    	restockBtn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-            	System.out.println("restock");
-                restock(evt, 1);
-            }
-        });
     	add(restockBtn);
     	
         //stack
@@ -89,7 +83,7 @@ public class TestGUI extends JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
         setSize( WIDTH, HEIGHT);
-        //setUndecorated(true);
+        setUndecorated(true);
         setVisible(true);
        
     }
@@ -107,16 +101,7 @@ public class TestGUI extends JFrame {
     } 
     
     private void restock(java.awt.event.MouseEvent evt, int id) {
-    	System.out.print("restock listener "+stack.stack.size() + "bags ");
     	
-    	System.out.print(stack.stack.size() +" < "+ (BAG_QTY-1));
-    	if(stack.stack.size()<=BAG_QTY-1){
-    		int index = stack.restock(id);
-    		if(index>=0){
-        		bags[index].setIcon(stack.stack.get(index).getImage());
-        		bags[index].setVisible(true);
-        	}
-    	}
     }
     
     private void replace(java.awt.event.MouseEvent evt, int id) {

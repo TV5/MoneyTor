@@ -27,15 +27,11 @@ public class Stack {
         printStack();
     }
     
-    public int restock(int id) {
+    public void restock(int id) {
         if(isValid(id)){
-        	int index = stack.size();
-            Bag bag = new Bag(id,index);
-            stack.add(bag);
-            printStack();
-            return index;
+            /*Bag bag = new Bag(id);
+            stack.add(bag);*/
         }
-        return -1;
     }
     
     public void purchase() {

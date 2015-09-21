@@ -32,7 +32,6 @@ public class Stack {
         	int index = stack.size();
             Bag bag = new Bag(id,index);
             stack.add(bag);
-            printStack();
             return index;
         }
         return -1;
