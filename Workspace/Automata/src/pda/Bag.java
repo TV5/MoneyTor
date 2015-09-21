@@ -15,6 +15,7 @@ import javax.swing.ImageIcon;
 public class Bag {
     
     int id;
+    int index;
     String color;
     ImageIcon image;
 
@@ -24,17 +25,19 @@ public class Bag {
         this.image = image;
     }
 
-    public Bag(int id) {
+    public Bag(int id, int index) {
         this.id = id;
+        this.index = index;
         this.setColor();
         this.setImage();
     }
+    
 
-    public static Bag generateRandomBag(){
+/*    public static Bag generateRandomBag(){
         Random rand = new Random();
         int id= rand.nextInt(50) + 1;
         return new Bag(id);
-    }
+    }*/
     
     public int getId() {
         return id;
@@ -54,17 +57,17 @@ public class Bag {
 
     public void setImage() {
         switch(id){
-            case 1: image = new ImageIcon(getClass().getResource("/pda/res/balag-a.png")); break;
-            case 2: image = new ImageIcon(getClass().getResource("/pda/res/balag-b.png")); break;
-            case 3: image = new ImageIcon(getClass().getResource("/pda/res/balag-c.png")); break;
+            case 1: image = new ImageIcon(getClass().getResource("/pda/res/blo.png")); break;
+            case 2: image = new ImageIcon(getClass().getResource("/pda/res/fenk.png")); break;
+            case 3: image = new ImageIcon(getClass().getResource("/pda/res/gren.png")); break;
         }
     }
 
     private void setColor() {
        switch(id) {
-           case 1: color = "green"; break;
-           case 2: color = "brown"; break;
-           case 3: color = "red"; break;
+           case 1: color = "blue"; break;
+           case 2: color = "pink"; break;
+           case 3: color = "green"; break;
        }
     }
     
