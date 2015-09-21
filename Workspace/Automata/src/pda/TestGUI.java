@@ -107,16 +107,18 @@ public class TestGUI extends JFrame {
     } 
     
     private void restock(java.awt.event.MouseEvent evt, int id) {
-    	System.out.print("restock listener "+stack.stack.size() + "bags ");
+    	TestGUI tG = new TestGUI();
     	
-    	System.out.print(stack.stack.size() +" < "+ (BAG_QTY-1));
-    	if(stack.stack.size()<=BAG_QTY-1){
-    		int index = stack.restock(id);
-    		if(index>=0){
-        		bags[index].setIcon(stack.stack.get(index).getImage());
-        		bags[index].setVisible(true);
-        	}
-    	}
+//    	System.out.print("restock listener "+stack.stack.size() + "bags ");
+//    	
+//    	System.out.print(stack.stack.size() +" < "+ (BAG_QTY-1));
+//    	if(stack.stack.size()<=BAG_QTY-1){
+//    		int index = stack.restock(id);
+//    		if(index>=0){
+//        		bags[index].setIcon(stack.stack.get(index).getImage());
+//        		bags[index].setVisible(true);
+//        	}
+//    	}
     }
     
     private void replace(java.awt.event.MouseEvent evt, int id) {
