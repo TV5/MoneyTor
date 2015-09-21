@@ -1,0 +1,54 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pda;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author Trisha Lim
+ */
+public class Stack {
+    
+    ArrayList<Bag> stack;
+
+    public Stack() {
+        this.stack = new ArrayList<>();
+    }
+    
+    public Stack(int[] idList) {
+        this.stack = new ArrayList<>();
+        for(int i=0; i<idList.length; i++){
+        	stack.add(new Bag(idList[i],i));
+        }
+    }
+    
+    public void restock(int id) {
+        if(isValid(id)){
+            Bag bag = new Bag(id);
+            stack.add(bag);
+        }
+    }
+    
+    public void purchase() {
+        stack.remove(0);
+        for (Bag bag : stack) {
+        	System.out.print(bag.color);
+        }
+    }
+    
+    public void replace(int id) {
+        if(isValid(id)){
+            Bag bag = new Bag(id);
+            stack.set(0, bag);
+        }
+    }
+    
+    public boolean isValid (int id) {
+        return (id <= 3);
+    }
+    
+}

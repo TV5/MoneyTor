@@ -21,34 +21,40 @@ public class Stack {
     
     public Stack(int[] idList) {
         this.stack = new ArrayList<>();
-        for (int id : idList) {
-            stack.add(new Bag(id));
+        for(int i=0; i<idList.length; i++){
+        	stack.add(new Bag(idList[i],i));
         }
+        printStack();
     }
     
     public void restock(int id) {
         if(isValid(id)){
-            Bag bag = new Bag(id);
-            stack.add(bag);
+            /*Bag bag = new Bag(id);
+            stack.add(bag);*/
         }
     }
     
     public void purchase() {
-        stack.remove(0);
-        for (Bag bag : stack) {
-        	System.out.print(bag.color);
-        }
+        stack.remove(stack.size()-1);
+        printStack();
     }
     
     public void replace(int id) {
         if(isValid(id)){
-            Bag bag = new Bag(id);
-            stack.set(0, bag);
+//            Bag bag = new Bag(id);
+//            stack.set(0, bag);
         }
     }
     
     public boolean isValid (int id) {
         return (id <= 3);
+    }
+    
+    public void printStack() {
+    	for(int i=(stack.size()-1); i>=0; i--){
+        	Bag bag = stack.get(i);
+        	System.out.print(bag.index + " " + bag.color + " -> ");
+        }
     }
     
 }
