@@ -58,8 +58,8 @@ public class BagColorPopUp extends JFrame {
 		// pink
 		JLabel pinkBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/select_bags/pink.png")));
 		pinkBtn.setVisible(true);
-		blueBtn.setBounds(310, 120, 100, 204);
-		blueBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+		pinkBtn.setBounds(310, 120, 100, 204);
+		pinkBtn.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Pink Clicked");
