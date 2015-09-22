@@ -61,7 +61,7 @@ public class TestGUI extends JFrame {
     	final ImageIcon restockDefault = new ImageIcon(getClass().getResource("/pda/res/buttons/restock.png"));
     	final ImageIcon restockHover = new ImageIcon(getClass().getResource("/pda/res/buttons/restock_hover.png"));
     	final JLabel restockBtn = new JLabel(restockDefault);
-    	restockBtn.setBounds(70,139,258,167);
+    	restockBtn.setBounds(71,140,258,167);
     	restockBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
             	System.out.println("restock");

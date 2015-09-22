@@ -76,10 +76,10 @@ public class BagColorPopUp extends JFrame {
     	add(bg);
     	
         //settings
-        //setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
         setSize(WIDTH, HEIGHT);
-        //setUndecorated(true);
+        setUndecorated(true);
         setVisible(true);
        
     }

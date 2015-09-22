@@ -42,7 +42,7 @@ public class TestGUI extends JFrame {
     	final ImageIcon replaceDefault = new ImageIcon(getClass().getResource("/pda/res/buttons/replace.png"));
     	final ImageIcon replaceHover = new ImageIcon(getClass().getResource("/pda/res/buttons/replace_hover.png"));
     	final JLabel replaceBtn = new JLabel(replaceDefault);
-    	replaceBtn.setBounds(369,136,257,149);
+    	replaceBtn.setBounds(371,130,257,149);
     	replaceBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
             	System.out.println("mouse clicked");
@@ -61,7 +61,7 @@ public class TestGUI extends JFrame {
     	final ImageIcon restockDefault = new ImageIcon(getClass().getResource("/pda/res/buttons/restock.png"));
     	final ImageIcon restockHover = new ImageIcon(getClass().getResource("/pda/res/buttons/restock_hover.png"));
     	final JLabel restockBtn = new JLabel(restockDefault);
-    	restockBtn.setBounds(70,139,258,167);
+    	restockBtn.setBounds(72,154,258,167);
     	restockBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
             	System.out.println("restock");

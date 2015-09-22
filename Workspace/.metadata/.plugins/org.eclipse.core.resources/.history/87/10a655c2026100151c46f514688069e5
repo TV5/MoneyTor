@@ -6,8 +6,8 @@ import javax.swing.JLabel;
 
 public class BagColorPopUp extends JFrame {
 	
-	private static final int WIDTH = 1366;
-    private static final int HEIGHT = 768;
+	private static final int WIDTH = 600;
+    private static final int HEIGHT = 350;
 	
 	public BagColorPopUp() {
         initComponents();
@@ -76,9 +76,9 @@ public class BagColorPopUp extends JFrame {
     	add(bg);
     	
         //settings
-        //setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-        setSize(WIDTH, HEIGHT);
+        setSize( 600, 350);
         //setUndecorated(true);
         setVisible(true);
        
