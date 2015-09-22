@@ -39,46 +39,31 @@ public class TestGUI extends JFrame {
     	bg.setBounds(0, 0, WIDTH, HEIGHT);
     	
     	//replace
-    	final ImageIcon replaceDefault = new ImageIcon(getClass().getResource("/pda/res/buttons/replace.png"));
-    	final ImageIcon replaceHover = new ImageIcon(getClass().getResource("/pda/res/buttons/replace_hover.png"));
-    	final JLabel replaceBtn = new JLabel(replaceDefault);
+    	JLabel replaceBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/buttons/replace.png")));
     	replaceBtn.setBounds(371,158,257,149);
     	replaceBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
             	System.out.println("mouse clicked");
                 replace(evt, 1);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                replaceBtn.setIcon(replaceHover);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-            	replaceBtn.setIcon(replaceDefault);
-            }
         });
     	add(replaceBtn);
     	
     	//restock
-    	final ImageIcon restockDefault = new ImageIcon(getClass().getResource("/pda/res/buttons/restock.png"));
-    	final ImageIcon restockHover = new ImageIcon(getClass().getResource("/pda/res/buttons/restock_hover.png"));
-    	final JLabel restockBtn = new JLabel(restockDefault);
+    	JLabel restockBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/buttons/restock.png")));
     	restockBtn.setBounds(72,154,258,167);
     	restockBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
             	System.out.println("restock");
                 restock(evt, 1);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                restockBtn.setIcon(restockHover);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-            	restockBtn.setIcon(restockDefault);
-            }
         });
     	add(restockBtn);
     	
     	//close
+
         final ImageIcon closeDefault = new ImageIcon(getClass().getResource("/pda/res/buttons/close.png"));
-    	final ImageIcon closeHover = new ImageIcon(getClass().getResource("/pda/res/buttons/close_hover.png"));
+    	ImageIcon closeHover = new ImageIcon(getClass().getResource("/pda/res/buttons/close_hover.png"));
     	final JLabel closeBtn = new JLabel(closeDefault);
     	closeBtn.setBounds(1280,20,60,60);
     	closeBtn.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -90,7 +75,7 @@ public class TestGUI extends JFrame {
                 closeBtn.setIcon(closeHover);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-            	closeBtn.setIcon(closeDefault);
+            	closeBtn.setIcon(closeHover);
             }
         });
     	add(closeBtn);
@@ -99,7 +84,7 @@ public class TestGUI extends JFrame {
         for(int i=0; i<BAG_QTY; i++) {
         	final Bag bag = stack.stack.get(i);
             bags[i] = new JLabel(bag.getImage());
-            bags[i].setBounds(850-(i*70), 401, 400, 400);
+            bags[i].setBounds(850-(i*70), 400, 400, 400);
             bags[i].setVisible(true);
             bags[i].setName(bag.getColor());
            // add(bags[i]);
