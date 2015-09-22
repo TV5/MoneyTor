@@ -11,12 +11,15 @@ public class BagColorPopUp extends JFrame {
 	private static final int WIDTH = 600;
 	private static final int HEIGHT = 350;
 	
+	private TestGUI test;
+	
 	public BagColorPopUp(Point location, TestGUI tg) {
 		setLocation(location);
-		initComponents(tg);
+		this.test = tg;
+		initComponents();
 	}
 
-	public void initComponents(final TestGUI tg) {
+	public void initComponents() {
 
 		JLabel bg = new JLabel(new ImageIcon(getClass().getResource("/pda/res/select_bags/bg.png")));
 		bg.setVisible(true);
@@ -30,7 +33,7 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Yellow Clicked");
-				tg.restockActual(0);
+				test.restockActual(0);
 			}
 		});
 		add(yellowBtn);
@@ -43,7 +46,7 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Purple Clicked");
-				tg.restockActual(0);
+				test.restockActual(0);
 			}
 		});
 		add(purpleBtn);
@@ -56,7 +59,8 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Blue Clicked");
-				tg.restockActual(1);
+				test.restockActual(1);
+				close();
 			}
 		});
 		add(blueBtn);
@@ -69,7 +73,8 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Pink Clicked");
-				tg.restockActual(2);
+				test.restockActual(2);
+				close();
 			}
 		});
 		add(pinkBtn);
@@ -82,7 +87,8 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Green Clicked");
-				tg.restockActual(3);
+				test.restockActual(3);
+				close();
 			}
 		});
 		add(greenBtn);
@@ -99,6 +105,10 @@ public class BagColorPopUp extends JFrame {
 		setUndecorated(false);
 		setVisible(true);
 
+	}
+	
+	private void close() {
+		this.dispose();
 	}
 	
 }
