@@ -1,8 +1,5 @@
 package pda;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
-
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -85,7 +82,7 @@ public class BagColorPopUp extends JFrame {
        // Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
        // this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
         setSize(WIDTH, HEIGHT);
-        setUndecorated(true);
+        setUndecorated(false);
         setVisible(true);
         
        
