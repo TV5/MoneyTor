@@ -181,6 +181,13 @@ public class TestGUI extends JFrame {
 	}
 
 	private void replace(int id) {
+		PointerInfo pointer = MouseInfo.getPointerInfo();
+        Point location = pointer.getLocation();
+        
+        ReplaceColorPopUp rc = new ReplaceColorPopUp(location, this);
+	}
+	
+	public void replaceActual(int id) {
 		System.out.print("replace");
 		int index = stack.replace(id);
 		if (index >= 0) {

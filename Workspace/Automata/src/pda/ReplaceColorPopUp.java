@@ -1,19 +1,23 @@
 package pda;
 
 import java.awt.Point;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class BagColorPopUp extends JFrame {
+import pda.TestGUI;
+
+public class ReplaceColorPopUp extends JFrame {
 
 	private static final int WIDTH = 600;
 	private static final int HEIGHT = 350;
 	
 	private TestGUI test;
 	
-	public BagColorPopUp(Point location, TestGUI tg) {
+	public ReplaceColorPopUp(Point location, TestGUI tg) {
 		setLocation(location);
 		this.test = tg;
 		initComponents();
@@ -59,7 +63,7 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Blue Clicked");
-				test.restockActual(1);
+				test.replaceActual(1);
 				close();
 			}
 		});
@@ -73,7 +77,7 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Pink Clicked");
-				test.restockActual(2);
+				test.replaceActual(2);
 				close();
 			}
 		});
@@ -87,7 +91,7 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Green Clicked");
-				test.restockActual(3);
+				test.replaceActual(3);
 				close();
 			}
 		});
