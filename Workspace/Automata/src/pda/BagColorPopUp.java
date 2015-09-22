@@ -1,5 +1,7 @@
 package pda;
 
+import java.awt.Point;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -8,12 +10,13 @@ public class BagColorPopUp extends JFrame {
 
 	private static final int WIDTH = 600;
 	private static final int HEIGHT = 350;
-
-	public BagColorPopUp() {
-		initComponents();
+	
+	public BagColorPopUp(Point location, TestGUI tg) {
+		setLocation(location);
+		initComponents(tg);
 	}
 
-	public void initComponents() {
+	public void initComponents(final TestGUI tg) {
 
 		JLabel bg = new JLabel(new ImageIcon(getClass().getResource("/pda/res/select_bags/bg.png")));
 		bg.setVisible(true);
@@ -27,6 +30,7 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Yellow Clicked");
+				tg.restockActual(0);
 			}
 		});
 		add(yellowBtn);
@@ -39,6 +43,7 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Purple Clicked");
+				tg.restockActual(0);
 			}
 		});
 		add(purpleBtn);
@@ -51,6 +56,7 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Blue Clicked");
+				tg.restockActual(1);
 			}
 		});
 		add(blueBtn);
@@ -63,6 +69,7 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Pink Clicked");
+				tg.restockActual(2);
 			}
 		});
 		add(pinkBtn);
@@ -75,6 +82,7 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Green Clicked");
+				tg.restockActual(3);
 			}
 		});
 		add(greenBtn);
@@ -92,5 +100,5 @@ public class BagColorPopUp extends JFrame {
 		setVisible(true);
 
 	}
-
+	
 }

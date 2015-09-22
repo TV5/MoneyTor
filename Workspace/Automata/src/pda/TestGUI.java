@@ -5,6 +5,10 @@
  */
 package pda;
 
+import java.awt.MouseInfo;
+import java.awt.Point;
+import java.awt.PointerInfo;
+
 import javax.swing.*;
 
 /**
@@ -15,12 +19,12 @@ public class TestGUI extends JFrame {
 
 	int idList[] = new int[] { 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3 };
 	Stack stack = new Stack(idList);
-	int BAG_QTY = idList.length;
-	int WIDTH = 1366;
-	int HEIGHT = 768;
+	final int BAG_QTY = idList.length;
+	private static final int WIDTH = 1366;
+	private static final int HEIGHT = 768;
 	char operation;
-	JLabel[] bags = new JLabel[BAG_QTY];
-	final JLabel[] bagLabel = new JLabel[BAG_QTY];
+	private JLabel[] bags = new JLabel[BAG_QTY];
+	private final JLabel[] bagLabel = new JLabel[BAG_QTY];
 
 	// images
 
@@ -48,7 +52,7 @@ public class TestGUI extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("mouse clicked");
-				replace(evt, 1);
+				replace(1);
 			}
 			@Override
 			public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -70,7 +74,7 @@ public class TestGUI extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("restock");
-				restock(evt, 1);
+				restock();
 			}
 			@Override
 			public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -121,7 +125,7 @@ public class TestGUI extends JFrame {
 			bags[i].addMouseListener(new java.awt.event.MouseAdapter() {
 				@Override
 				public void mouseClicked(java.awt.event.MouseEvent evt) {
-					purchase(evt, bag, bagLabel[temp]);
+					purchase(bag, bagLabel[temp]);
 				}
 			});
 		}
@@ -142,7 +146,7 @@ public class TestGUI extends JFrame {
 
 	}
 
-	private void purchase(java.awt.event.MouseEvent evt, Bag bag, JLabel label) {
+	private void purchase(Bag bag, JLabel label) {
 		System.out.println("click" + bag.getColor());
 		System.out.println(bag.index + " " + (stack.stack.size() - 1));
 		if (bag.index == stack.stack.size() - 1) {
@@ -153,24 +157,30 @@ public class TestGUI extends JFrame {
 		}
 	}
 
-	private void restock(java.awt.event.MouseEvent evt, int id) {
-		BagColorPopUp bc = new BagColorPopUp();
-	}
-
-	private void restockBlue(int id) {
+	private void restock() {
+		PointerInfo pointer = MouseInfo.getPointerInfo();
+        Point location = pointer.getLocation();
+		
 		System.out.print("restock listener " + stack.stack.size() + "bags ");
 
 		System.out.print(stack.stack.size() + " < " + (BAG_QTY - 1));
 		if (stack.stack.size() <= BAG_QTY - 1) {
-			int index = stack.restock(id);
-			if (index >= 0) {
-				bags[index].setIcon(stack.stack.get(index).getImage());
-				bags[index].setVisible(true);
-			}
+			BagColorPopUp bc = new BagColorPopUp(location, this);
+			
+		} else {
+			System.out.print("Full: cannot restock");
 		}
 	}
 
-	private void replace(java.awt.event.MouseEvent evt, int id) {
+	public void restockActual(int id) {
+		int index = stack.restock(id);
+		if (index >= 0) {
+			bags[index].setIcon(stack.stack.get(index).getImage());
+			bags[index].setVisible(true);
+		}
+	}
+
+	private void replace(int id) {
 		System.out.print("replace");
 		int index = stack.replace(id);
 		if (index >= 0) {
