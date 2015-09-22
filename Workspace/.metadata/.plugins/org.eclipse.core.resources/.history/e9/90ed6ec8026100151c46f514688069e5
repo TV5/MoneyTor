@@ -6,15 +6,15 @@ import javax.swing.JLabel;
 
 public class BagColorPopUp extends JFrame {
 	
-	private static final int WIDTH = 600;
-    private static final int HEIGHT = 350;
+	private static final int WIDTH = 1366;
+    private static final int HEIGHT = 768;
 	
 	public BagColorPopUp() {
         initComponents();
     }
 
 	public void initComponents() {        
-		ImageIcon test = new ImageIcon(getClass().getResource("/pda/res/select_bags/bg.png"));
+		ImageIcon test = new ImageIcon(getClass().getResource("/pda/res/select_bags/select-bag-BG.png"));
 		JLabel bg = new JLabel(test);
     	bg.setVisible(true);
     	bg.setBounds(0, 0, WIDTH, HEIGHT);
@@ -40,7 +40,6 @@ public class BagColorPopUp extends JFrame {
             }
         });
     	add(purpleBtn);
-    	
     	//blue
     	JLabel blueBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/select_bags/blue.png")));
     	blueBtn.setBounds(230,300,258,167);
@@ -77,14 +76,11 @@ public class BagColorPopUp extends JFrame {
     	add(bg);
     	
         //settings
-        //setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-       // Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-       // this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
         setSize(WIDTH, HEIGHT);
-        setUndecorated(false);
+        setUndecorated(true);
         setVisible(true);
-        
        
     }
 	
