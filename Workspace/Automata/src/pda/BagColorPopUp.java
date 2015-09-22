@@ -26,7 +26,7 @@ public class BagColorPopUp extends JFrame {
 		yellowBtn.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
-				System.out.println("Blue Clicked");
+				System.out.println("Yellow Clicked");
 			}
 		});
 		add(yellowBtn);
@@ -38,7 +38,7 @@ public class BagColorPopUp extends JFrame {
 		purpleBtn.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
-				System.out.println("Pink Clicked");
+				System.out.println("Purple Clicked");
 			}
 		});
 		add(purpleBtn);
