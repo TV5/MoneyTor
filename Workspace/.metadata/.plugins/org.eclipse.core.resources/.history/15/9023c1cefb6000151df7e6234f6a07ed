@@ -42,17 +42,12 @@ public class TestGUI extends JFrame {
     	final ImageIcon replaceDefault = new ImageIcon(getClass().getResource("/pda/res/buttons/replace.png"));
     	final ImageIcon replaceHover = new ImageIcon(getClass().getResource("/pda/res/buttons/replace_hover.png"));
     	final JLabel replaceBtn = new JLabel(replaceDefault);
+    	final JLabel replaceBtn = new JLabel(replaceDefault);
     	replaceBtn.setBounds(371,158,257,149);
     	replaceBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
             	System.out.println("mouse clicked");
                 replace(evt, 1);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                replaceBtn.setIcon(replaceHover);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-            	replaceBtn.setIcon(replaceDefault);
             }
         });
     	add(replaceBtn);
