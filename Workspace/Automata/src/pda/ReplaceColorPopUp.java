@@ -32,7 +32,7 @@ public class ReplaceColorPopUp extends JFrame {
 		// yellow
 		JLabel yellowBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/select_bags/yellow.png")));
 		yellowBtn.setVisible(true);
-		yellowBtn.setBounds(10, 120, 100, 204);
+		yellowBtn.setBounds(50, 120, 100, 204);
 		yellowBtn.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -45,7 +45,7 @@ public class ReplaceColorPopUp extends JFrame {
 		// purple
 		JLabel purpleBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/select_bags/purple.png")));
 		purpleBtn.setVisible(true);
-		purpleBtn.setBounds(110, 120, 100, 204);
+		purpleBtn.setBounds(150, 120, 100, 204);
 		purpleBtn.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -58,7 +58,7 @@ public class ReplaceColorPopUp extends JFrame {
 		// blue
 		JLabel blueBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/select_bags/blue.png")));
 		blueBtn.setVisible(true);
-		blueBtn.setBounds(210, 120, 100, 204);
+		blueBtn.setBounds(250, 120, 100, 204);
 		blueBtn.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -72,7 +72,7 @@ public class ReplaceColorPopUp extends JFrame {
 		// pink
 		JLabel pinkBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/select_bags/pink.png")));
 		pinkBtn.setVisible(true);
-		pinkBtn.setBounds(310, 120, 100, 204);
+		pinkBtn.setBounds(350, 120, 100, 204);
 		pinkBtn.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -86,7 +86,7 @@ public class ReplaceColorPopUp extends JFrame {
 		// green
 		JLabel greenBtn = new JLabel(new ImageIcon(getClass().getResource("/pda/res/select_bags/green.png")));
 		greenBtn.setVisible(true);
-		greenBtn.setBounds(410, 120, 100, 204);
+		greenBtn.setBounds(450, 120, 100, 204);
 		greenBtn.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
