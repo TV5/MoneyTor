@@ -169,6 +169,10 @@ public class TestGUI extends JFrame {
 			
 		} else {
 			System.out.print("Full: cannot restock");
+			JOptionPane.showMessageDialog(new JFrame(),
+				    "Stack is full. You cannot restock.",
+				    "RESTOCK WARNING",
+				    JOptionPane.WARNING_MESSAGE);
 		}
 	}
 

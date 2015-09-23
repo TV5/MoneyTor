@@ -5,6 +5,7 @@ import java.awt.Point;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 public class BagColorPopUp extends JFrame {
 
@@ -33,6 +34,10 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Yellow Clicked");
+				JOptionPane.showMessageDialog(new JFrame(),
+					    "Cannot Restock with Yellow Bag",
+					    "RESTOCK WARNING",
+					    JOptionPane.WARNING_MESSAGE);
 				close();
 			}
 		});
@@ -46,6 +51,10 @@ public class BagColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Purple Clicked");
+				JOptionPane.showMessageDialog(new JFrame(),
+					    "Cannot Restock with Purple Bag",
+					    "RESTOCK WARNING",
+					    JOptionPane.WARNING_MESSAGE);
 				close();
 			}
 		});

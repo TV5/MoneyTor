@@ -1,5 +1,6 @@
 package pda;
 
+import java.awt.Component;
 import java.awt.Point;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -7,6 +8,7 @@ import java.awt.event.WindowEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 import pda.TestGUI;
 
@@ -37,6 +39,11 @@ public class ReplaceColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Yellow Clicked");
+
+				JOptionPane.showMessageDialog(new JFrame(),
+					    "Cannot Replace Bag with Yellow Bag",
+					    "REPLACE WARNING",
+					    JOptionPane.WARNING_MESSAGE);
 				close();
 			}
 		});
@@ -50,6 +57,10 @@ public class ReplaceColorPopUp extends JFrame {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Purple Clicked");
+				JOptionPane.showMessageDialog(new JFrame(),
+					    "Cannot Replace Bag with Purple Bag",
+					    "REPLACE WARNING",
+					    JOptionPane.WARNING_MESSAGE);
 				close();
 			}
 		});
