@@ -1,6 +1,5 @@
 package pda;
 
-import java.awt.Color;
 import java.awt.Point;
 
 import javax.swing.ImageIcon;
@@ -16,18 +15,17 @@ public class BagColorPopUp extends JFrame {
 	private TestGUI test;
 	
 	public BagColorPopUp(Point location, TestGUI tg) {
-		
+		setLocation(location);
 		this.test = tg;
 		initComponents();
 	}
 
 	public void initComponents() {
 
-		JLabel bg = new JLabel(new ImageIcon(getClass().getResource("/pda/res/select_bags/bg.png")));
+		JLabel bg = new JLabel(new ImageIcon(getClass().getResource("/pda/res/select_bags/select-bag-BG.png")));
 		bg.setVisible(true);
 		bg.setBounds(0, 0, WIDTH, HEIGHT);
 
-		//close
 		final ImageIcon closeDefault = new ImageIcon(getClass().getResource("/pda/res/buttons/close.png"));
 		final ImageIcon closeHover = new ImageIcon(getClass().getResource("/pda/res/buttons/close_hover.png"));
 		final JLabel closeBtn = new JLabel(closeDefault);
@@ -58,10 +56,10 @@ public class BagColorPopUp extends JFrame {
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Yellow Clicked");
 				JOptionPane.showMessageDialog(new JFrame(),
-					    "Cannot restock with yellow bag. Please select another option.",
+					    "Cannot Restock with Yellow Bag",
 					    "RESTOCK WARNING",
 					    JOptionPane.WARNING_MESSAGE);
-				//close();
+				close();
 			}
 		});
 		add(yellowBtn);
@@ -75,10 +73,10 @@ public class BagColorPopUp extends JFrame {
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Purple Clicked");
 				JOptionPane.showMessageDialog(new JFrame(),
-					    "Cannot restock with purple bag. Please select another option.",
+					    "Cannot Restock with Purple Bag",
 					    "RESTOCK WARNING",
 					    JOptionPane.WARNING_MESSAGE);
-				//close();
+				close();
 			}
 		});
 		add(purpleBtn);
@@ -134,10 +132,8 @@ public class BagColorPopUp extends JFrame {
 		// this.setLocation(dim.width/2-this.getSize().width/2,
 		// dim.height/2-this.getSize().height/2);
 		setSize(WIDTH, HEIGHT);
-		setLocationRelativeTo(null);
 		setUndecorated(true);
 		setVisible(true);
-		setBackground(new Color(0f,0f,0f,0f));
 
 	}
 	

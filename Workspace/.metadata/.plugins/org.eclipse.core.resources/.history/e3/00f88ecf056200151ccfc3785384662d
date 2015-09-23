@@ -16,7 +16,7 @@ public class BagColorPopUp extends JFrame {
 	private TestGUI test;
 	
 	public BagColorPopUp(Point location, TestGUI tg) {
-		
+		setLocation(location);
 		this.test = tg;
 		initComponents();
 	}
@@ -58,7 +58,7 @@ public class BagColorPopUp extends JFrame {
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Yellow Clicked");
 				JOptionPane.showMessageDialog(new JFrame(),
-					    "Cannot restock with yellow bag. Please select another option.",
+					    "Cannot Restock with Yellow Bag",
 					    "RESTOCK WARNING",
 					    JOptionPane.WARNING_MESSAGE);
 				//close();
@@ -75,7 +75,7 @@ public class BagColorPopUp extends JFrame {
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
 				System.out.println("Purple Clicked");
 				JOptionPane.showMessageDialog(new JFrame(),
-					    "Cannot restock with purple bag. Please select another option.",
+					    "Cannot Restock with Purple Bag",
 					    "RESTOCK WARNING",
 					    JOptionPane.WARNING_MESSAGE);
 				//close();
@@ -134,7 +134,6 @@ public class BagColorPopUp extends JFrame {
 		// this.setLocation(dim.width/2-this.getSize().width/2,
 		// dim.height/2-this.getSize().height/2);
 		setSize(WIDTH, HEIGHT);
-		setLocationRelativeTo(null);
 		setUndecorated(true);
 		setVisible(true);
 		setBackground(new Color(0f,0f,0f,0f));
