@@ -187,8 +187,16 @@ public class TestGUI extends JFrame {
 	private void replace(int id) {
 		PointerInfo pointer = MouseInfo.getPointerInfo();
         Point location = pointer.getLocation();
-        
-        ReplaceColorPopUp rc = new ReplaceColorPopUp(location, this);
+
+        if(stack.stack.size() > 0){
+                ReplaceColorPopUp rc = new ReplaceColorPopUp(location, this);
+        }else{
+       	
+        	JOptionPane.showMessageDialog(new JFrame(),
+			    "Nothing to replace.",
+			    "REPLACE WARNING",
+			    JOptionPane.WARNING_MESSAGE);
+        }
 	}
 	
 	public void replaceActual(int id) {
@@ -197,6 +205,7 @@ public class TestGUI extends JFrame {
 		if (index >= 0) {
 			bags[index].setIcon(stack.stack.get(index).getImage());
 		}
+		
 	}
 
 }
