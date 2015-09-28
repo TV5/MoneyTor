@@ -1,0 +1,27 @@
+ACCOUNT
+update
+	transactorId
+	amount
+	transactionDate
+	type
+
+USER
+update
+	fName
+	lName
+	password
+	status
+	type
+deactivate
+changePassword
+	currentPw
+	newPw
+
+TRANSACTOR
+update
+	name
+	address
+	telephoneNo
+	mobileNo
+	terms
+
