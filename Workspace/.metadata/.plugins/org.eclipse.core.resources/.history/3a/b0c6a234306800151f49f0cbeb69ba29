@@ -37,6 +37,7 @@
   <script src="../dist/components/modal.min.js"></script>
   <script src="../dist/components/dimmer.min.js"></script>
   <script src="../dist/components/transition.min.js"></script>
+  <script src="js/main.js"></script>
 
   <style type="text/css">
     body {
@@ -873,5 +874,3 @@
 </body>
 
 </html>
-
-  <script src="js/main.js"></script>
