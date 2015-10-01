@@ -8,28 +8,8 @@
 
   <!-- Site Properities -->
   <title>Main Page</title>
-  <link rel="stylesheet" type="text/css" href="../dist/components/reset.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/site.css">
-
-  <link rel="stylesheet" type="text/css" href="../dist/components/container.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/grid.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/header.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/image.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/menu.css">
-
-  <link rel="stylesheet" type="text/css" href="../dist/components/divider.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/segment.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/form.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/input.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/button.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/list.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/message.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/icon.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/tab.min.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/table.min.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/modal.min.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/dimmer.min.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/transition.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/semantic.css">
+  <link rel="stylesheet" type="text/css" href="../dist/semantic.min.css">
   <script src="assets/library/jquery.min.js"></script>
   <script src="../dist/components/form.js"></script>
   <script src="../dist/components/transition.js"></script>
@@ -389,33 +369,69 @@
 		    <div class="two wide field">
 		      <label>Username</label>      
 		    </div>
-		    <div class="fourteen wide field">
-		      josephpalmaras
+		    <div class="eight wide field">
+		      <label id="username">josephpalmaras</label>
+		      <input id="usernametxt" type="text" value="josephpalmaras" disabled/>
 		    </div>
 		</div>
-		
 		<div class="inline fields">
+		    <div class="two wide field">
+		      <label>First Name</label>      
+		    </div>
+		    <div class="eight wide field">
+		    	<label id="fname">Joseph Gabriell</label>
+		      <input id="fnametxt" type="text" value="Joseph Gabriell"/>
+		    </div>
+		</div>
+		<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Last Name</label>      
+		    </div>
+		    <div class="eight wide field">
+		    	<label id="lname">Palmaras</label>
+		      <input id="lnametxt" type="text" value="Palmaras"/>
+		    </div>
+		</div>
+		<div id="currPass" class="inline fields">
 		    <div class="two wide field">
 		      <label>Password</label>      
 		    </div>
-		    <div class="fourteen wide field">
-		      <text>****** </text> <a href="#">change password</a>
+		    <div class="eight wide field">
+		      <text>********</text> <a id="changepass" href="#" onclick="changePassword()">change password</a>
 		    </div>
 		</div>
-		
-		<div class="inline fields">
-		    <div class="two wide field">
-		      <label>Name</label>      
-		    </div>
-		    <div class="fourteen wide field">
-		      <input type="text" value="Joseph Gabriell Palmaras"/>
-		    </div>
+		<div id="newPass">
+			<div class="inline fields">
+			    <div class="two wide field">
+			      <label>Current Password</label>      
+			    </div>
+			    <div class="eight wide field">
+			      <input type="text"/>
+			    </div>
+			</div>
+			<div class="inline fields">
+			    <div class="two wide field">
+			      <label>New Password</label>      
+			    </div>
+			    <div class="eight wide field">
+			      <input type="text"/>
+			    </div>
+			</div>
+			<div class="inline fields">
+			    <div class="two wide field">
+			      <label>Confirm New Password</label>      
+			    </div>
+			    <div class="eight wide field">
+			      <input type="text"/>
+			    </div>
+			</div>
 		</div>
     </form>
   </div>
 		<div class="actions">
-			<div class="ui approve button teal">Save</div>
-		    <div class="ui cancel button teal">Cancel</div>
+			<div id="editBtn" class="ui button teal" onclick="edit()">Edit</div>
+			<div id="saveBtn" class="ui button teal" onclick="edit()">Save</div>
+		    <div class="ui cancel button teal" onclick="cancelEdit()">Cancel</div>
 		</div>
 </div>
 
@@ -878,7 +894,70 @@
   </div>
 
 </body>
+<script type="text/javascript">
+	$('#fnametxt').hide();
+	$('#usernametxt').hide();
+	$('#lnametxt').hide();
+	$('#changepass').hide();
+	$('#saveBtn').hide();
+	$('#newPass').hide();
 
+	function edit(){
+		$('#saveBtn').toggle();
+		$('#username').toggle();
+		$('#fname').toggle();
+		$('#lname').toggle();
+		$('#usernametxt').toggle();
+		$('#fnametxt').toggle();
+		$('#lnametxt').toggle();
+		$('#editBtn').toggle();
+		$('#changepass').toggle();
+	}
+
+	function changePassword(){
+		$('#currPass').toggle();
+		$('#newPass').toggle();
+	}
+
+	function cancelEdit(){
+		$('#saveBtn').toggle();
+		$('#username').toggle();
+		$('#fname').toggle();
+		$('#lname').toggle();
+		$('#usernametxt').toggle();
+		$('#fnametxt').toggle();
+		$('#lnametxt').toggle();
+		$('#editBtn').toggle();
+		$('#changepass').toggle();
+		$('#currPass').toggle();
+		$('#newPass').toggle();
+	}
+
+	$('.top.menu .item').tab();
+
+	$('#addPayableBtn').click(function(){
+		$('#addPayable').modal('show');
+	});
+	
+	$('#addReceivableBtn').click(function(){
+		$('#addReceivable').modal('show');
+	});
+	
+	$('#addSupplierBtn').click(function(){
+		$('#addSupplier').modal('show');
+	});
+	
+	$('#addCustomerBtn').click(function(){
+		$('#addCustomer').modal('show');
+	});
+	
+	$('#settingsLink').click(function(){
+		$('#userSettings').modal('show');
+	});
+	
+	$('#logoutLink').click(function(){
+		$('#logout').modal('show');
+	});
+
+</script>
 </html>
-
-  <script src="js/main.js"></script>
