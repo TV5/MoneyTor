@@ -1,0 +1,30 @@
+PAL
+log out
+log in
+manage user
+add user
+edit user
+delete user
+
+IVAN
+payables
+receivables
+add accounts
+view accounts
+edit accounts
+
+SONIA
+print summary report
+
+DK
+transactors
+delete suppliers
+delete customers
+edit suppliers
+edit customers
+
+TRISHA
+add suppliers
+add customers
+view suppliers
+view customers
