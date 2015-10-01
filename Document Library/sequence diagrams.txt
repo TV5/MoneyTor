@@ -15,6 +15,8 @@ edit accounts
 
 SONIA
 print summary report
+view payments
+add payment
 
 DK
 transactors
