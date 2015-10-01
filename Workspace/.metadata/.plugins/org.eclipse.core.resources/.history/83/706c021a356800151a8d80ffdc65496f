@@ -447,11 +447,11 @@
         </tr>
         <tr>
           <td><b>Total Amount Paid:</b></td>
-          <td><b>P15,000.00</b></td>
+          <td>P15,000.00</td>
         </tr>
         <tr>
           <td><b>Remaining Balance:</b></td>
-          <td style="color:red"><b>P7,000.00</b></td>
+          <td>P7,000.00</td>
         </tr>
       </tbody>
     </table>

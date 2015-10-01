@@ -152,45 +152,18 @@
 	    <th>August 18, 2015</th>
 	    <th>September 18, 2015</th>
 	    <th><a href="#" onClick="editData()"><i class="edit icon"></i></a></th>
-	    <th> <button class="ui button teal">View Payments</button></th>
+	    <th> <button class="ui button teal paymentsBtn" >View Payments</button></th>
 	  	</tr>
 	  	<tr>
 	    <th>001724</th>
 	    <th>SM Entertainment </th>
-	    <th>P16,400.00
-	    </th>
+	    <th>P16,400.00</th>
 	    <th>August 12, 2015</th>
 	    <th>September 19, 2015</th>
 	    <th> <a href="#" onClick="editData()"><i class="edit icon"></i></a></th>
+	    <th> <button class="ui button teal paymentsBtn">View Payments</button></th>
 	  	</tr>
-	  	<tr>
-	    <th>001611</th>
-	    <th><a href="#">VECO</a>   <a href="#" id="eicon" onClick="editData()"><i class="edit icon"></i></a></th>
-	    <th>P10,000.00</th>
-	    <th>August 11, 2015</th>
-	    <th>October 1, 2015</th>
-	  	</tr>
-	  	<tr>
-	    <th>001610</th>
-	    <th><a href="#">Curt Co</a>   <a href="#" id="eicon" onClick="editData()"><i class="edit icon"></i></a></th>
-	    <th>P700.00</th>
-	    <th>August 11, 2015</th>
-	    <th>October 1, 2015</th>
-	  	</tr>
-	  	<tr>
-	    <th>001599</th>
-	    <th><a href="#">Kiefer Lim</a>   <a href="#" id="eicon" onClick="editData()"><i class="edit icon"></i></a></th>
-	    <th>P5,000.00</th>
-	    <th>August 9, 2015</th>
-	    <th>January 12, 2016</th>
-	  	</tr>
-	  	<tr>
-	    <th>001566</th>
-	    <th><a href="#" style="color:red">Whats App</a>   <a href="#" id="eicon" style="color:red" onClick="editData()"><i class="edit icon"></i></a></th>
-	    <th>P1300.00</th>
-	    <th>August 8, 2015</th>
-	    <th>August 25 , 2015</th>
-	  	</tr>
+	  	
 	  </tbody>
 	  </table>
 	<div class="ui pagination menu right" style="float:right">
@@ -405,8 +378,8 @@
 			</div>
 		</div>
 	</div>
-	
-	
+
+<!-- USER SETTINGS MODAL -->
 <div id="userSettings" class="ui modal">
   <div class="header">User Settings</div>
   <div class="content">
@@ -443,6 +416,58 @@
 		<div class="actions">
 			<div class="ui approve button teal">Save</div>
 		    <div class="ui cancel button teal">Cancel</div>
+		</div>
+</div>
+
+
+<!-- PAYMENTS MODAL -->
+<div id="payments" class="ui modal small">
+  <div class="header">Payment History</div>
+  <div class="content">
+  
+    <table class="ui celled padded table">
+      <thead>
+        <tr>
+    	  <th>Amount</th>
+    	  <th>Date</th>	
+    	</tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>P5,000.00</td>
+          <td>August 5, 2014</td>
+        </tr>
+         <tr>
+          <td>P5,000.00</td>
+          <td>August 5, 2014</td>
+        </tr>
+         <tr>
+          <td>P5,000.00</td>
+          <td>August 5, 2014</td>
+        </tr>
+        <tr>
+          <td>Total Amount Paid: P15,000.00</td>
+        </tr>
+        <tr>
+          <td>Remaining Balance: P7,000.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Total Amount Paid: P15,000.00</h2>
+    <p>Total Amount Paid: P15,000.00</p>
+    <form class="ui form">
+		<div class="inline fields">
+		    <div class="thirteen wide field">
+		      <input type="number" placeholder="Amount paid"/>
+		    </div>
+		    <div class="three wide field">
+		    <div class="ui button teal">Add Payment</div>
+		    </div>
+		</div>
+    </form>
+  </div>
+		<div class="actions">
+			<div class="ui approve button teal">Done</div>
 		</div>
 </div>
 
@@ -853,44 +878,7 @@
   </div>
 
 </body>
-<script type="text/javascript">
 
-/* 	$('.ui .item').on('click', function() {
-	    $('.ui .item').removeClass('active');
-	    $(this).addClass('active');
-	});  */    
-	
-	$('.top.menu .item').tab();
-
-	$('#addPayableBtn').click(function(){
-		$('#addPayable').modal('show');
-	});
-	
-	$('#addReceivableBtn').click(function(){
-		$('#addReceivable').modal('show');
-	});
-	
-	$('#addSupplierBtn').click(function(){
-		$('#addSupplier').modal('show');
-	});
-	
-	$('#addCustomerBtn').click(function(){
-		$('#addCustomer').modal('show');
-	});
-	
-	$('#settingsLink').click(function(){
-		$('#userSettings').modal('show');
-	});
-	
-	$('#logoutLink').click(function(){
-		$('#logout').modal('show');
-	});
-	
-	function editData() {
-	    $('#editPayable').modal('show');
-	}
-	function editDataR() {
-	    $('#editReceivable').modal('show');
-	}
-</script>
 </html>
+
+  <script src="js/main.js"></script>
