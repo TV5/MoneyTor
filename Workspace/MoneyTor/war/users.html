@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
 <!-- Standard Meta -->
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -10,48 +9,8 @@
 
 <!-- Site Properities -->
 <title>User Management</title>
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/reset.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/site.css">
-
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/container.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/grid.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/header.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/image.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/menu.css">
-
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/divider.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/segment.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/form.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/input.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/button.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/list.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/message.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/icon.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/tab.min.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/table.min.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/modal.min.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/dimmer.min.css">
-<link rel="stylesheet" type="text/css"
-	href="../dist/components/transition.min.css">
+<link rel="stylesheet" type="text/css" href="../dist/semantic.css">
+<link rel="stylesheet" type="text/css" href="../dist/semantic.min.css">
 <script src="assets/library/jquery.min.js"></script>
 <script src="../dist/components/form.js"></script>
 <script src="../dist/components/transition.js"></script>
@@ -90,68 +49,6 @@ a {
 .link {
 	color: #00b5ad !important;
 }
-</style>
-  <!-- Standard Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-  <!-- Site Properities -->
-  <title>Main Page</title>
-  <link rel="stylesheet" type="text/css" href="../dist/components/reset.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/site.css">
-
-  <link rel="stylesheet" type="text/css" href="../dist/components/container.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/grid.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/header.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/image.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/menu.css">
-
-  <link rel="stylesheet" type="text/css" href="../dist/components/divider.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/segment.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/form.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/input.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/button.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/list.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/message.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/icon.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/tab.min.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/table.min.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/modal.min.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/dimmer.min.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/transition.min.css">
-  <script src="assets/library/jquery.min.js"></script>
-  <script src="../dist/components/form.js"></script>
-  <script src="../dist/components/transition.js"></script>
-  <script src="../dist/components/tab.min.js"></script>
-  <script src="../dist/components/modal.min.js"></script>
-  <script src="../dist/components/dimmer.min.js"></script>
-  <script src="../dist/components/transition.min.js"></script>
-
-  <style type="text/css">
-    body {
-      background-color: #DADADA;
-    }
-    body > .grid {
-      height: 100%;
-    }
-    .image {
-      margin-top: -100px;
-    }
-    .column {
-      max-width: 450px;
-    }
-    .firstmenu {
-    	padding-left: 20px;
-    	padding-right: 20px;
-    	padding-top: 0px;
-    }
-    a {
-    	color: #00b5ad;
-    }
-    .link {
-    	color: #00b5ad !important;
-    }
   </style>
 </head>
 <body>
@@ -175,14 +72,13 @@ a {
 	   <a id="logoutLink" class="ui item">
 	      Log out
 	    </a>
-	  </div>
-	  
+	  </div>  
 	</div>
 	<div class="ui top attached tabular menu">
 	  <a data-tab="employeesTab" class="item active" >
 	    EMPLOYEES
 	  </a>
-	  <a data-tab="receivablesTab" class="item">
+	  <a data-tab="administratorsTab" class="item">
 	    ADMINISTRATORS
 	  </a>
 	</div>
@@ -245,28 +141,7 @@ a {
 						<th><button class="ui button teal" id="editemployeeBtn">edit</button></th>
 					</tr>
 				</tbody>
-			</table>
-
-			<div class="ui pagination menu right" style="float: right">
-				<a class="active item"> 1 </a>
-				<div class="disabled item">...</div>
-				<a class="item"> 10 </a> <a class="item"> 11 </a> <a class="item">
-					12 </a>
-
-			  <thead>
-			    <tr>
-			    <th>Name <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Address <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Contact <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Terms <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Date Created <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Date Updated <i class="dropdown icon link" style="float:right"></i></th>
-			  	</tr>
-			  </thead>
-			  <tbody>
-			  	
-			  </tbody>
-			  </table>
+			</table>	
 		  
 			<div class="ui pagination menu right" style="float:right">
 			  <a class="active item">
@@ -330,18 +205,7 @@ a {
 						<th>Palmaras</th>
 						<th><button class="ui button teal" id="editadministratorBtn">edit</button></th>
 					</tr>
-					<tr>
-						<th>svd</th>
-						<th>Sonia</th>
-						<th>Vidal</th>
-						<th><button class="ui button teal" id="editadministratorBtn">edit</button></th>
-					</tr>
-					<tr>
-						<th>trishalim</th>
-						<th>Trisha</th>
-						<th>Lim</th>
-						<th><button class="ui button teal" id="editadministratorBtn">edit</button></th>
-					</tr>
+					
 				</tbody>
 			</table>
 
@@ -350,62 +214,14 @@ a {
 				<div class="disabled item">...</div>
 				<a class="item"> 10 </a> <a class="item"> 11 </a> <a class="item">
 					12 </a>
-=======
-			  <thead>
-			    <tr>
-			    <th>Name <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Address <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Contact <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Terms <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Date Created <i class="dropdown icon link" style="float:right"></i></th>
-			    <th>Date Updated <i class="dropdown icon link" style="float:right"></i></th>
-			  	</tr>
-			  </thead>
-			  <tbody>
-			  	
-			  </tbody>
-			  </table>
-			   
-			<div class="ui pagination menu right" style="float:right">
-			  <a class="active item">
-			    1
-			  </a>
-			  <div class="disabled item">
-			    ...
-			  </div>
-			  <a class="item">
-			    10
-			  </a>
-			  <a class="item">
-			    11
-			  </a>
-			  <a class="item">
-			    12
-			  </a>
->>>>>>> master
 			</div>
 		</div>
 	</div>
 	
-	
-<div id="userSettings" class="ui modal">
-  <div class="header">User Settings</div>
-  <div class="content">
-    <form class="ui form">
-    
-    	<div class="inline fields">
-		    <div class="two wide field">
-		      <label>Username</label>      
-		    </div>
-		    <div class="fourteen wide field">
-		      josephpalmaras
-		    </div>
-		</div>
-<<<<<<< HEAD
 
 		<!-- employee INFORMATION  -->
 		<div id="addemployee" class="ui modal">
-			<div class="header">employee</div>
+			<div class="header">Employee</div>
 			<div class="content">
 				<form class="ui form">
 
@@ -651,31 +467,8 @@ a {
 					Yes <i class="checkmark icon"></i>
 				</div>
 			</div>
-=======
-		
-		<div class="inline fields">
-		    <div class="two wide field">
-		      <label>Password</label>      
-		    </div>
-		    <div class="fourteen wide field">
-		      <text>****** </text> <a href="#">change password</a>
-		    </div>
 		</div>
 		
-		<div class="inline fields">
-		    <div class="two wide field">
-		      <label>Name</label>      
-		    </div>
-		    <div class="fourteen wide field">
-		      <input type="text" value="Joseph Gabriell Palmaras"/>
-		    </div>
-		</div>
-    </form>
-  </div>
-		<div class="actions">
-			<div class="ui approve button teal">Save</div>
-		    <div class="ui cancel button teal">Cancel</div>
-		</div>
 </div>
 
 <!-- RECEIVABLE INFORMATION -->
@@ -718,7 +511,6 @@ a {
 		    <div class="fourteen wide field">
 		      <input type="date">
 		    </div>
->>>>>>> master
 		</div>
 		
 		<div class="inline fields">
@@ -748,7 +540,7 @@ a {
     	
     	<div class="inline fields">
 		    <div class="two wide field">
-		      <label>employee Name</label>      
+		      <label>Employee Name</label>      
 		    </div>
 		    <div class="fourteen wide field">
 		      <input type="text">
@@ -804,7 +596,7 @@ a {
 
 <!-- employee INFORMATION  -->
 <div id="addemployee" class="ui modal">
-  <div class="header">employee</div>
+  <div class="header">Employee</div>
   <div class="content">
     <form class="ui form">
     	
@@ -863,7 +655,7 @@ a {
 
 <!-- administrator INFORMATION  -->
 <div id="addadministrator" class="ui modal">
-  <div class="header">employee</div>
+  <div class="header">Administrator</div>
   <div class="content">
     <form class="ui form">
     	
@@ -919,7 +711,80 @@ a {
     <div class="ui cancel button">Cancel</div>
   </div>
 </div>
-
+<div id="userSettings" class="ui modal">
+  <div class="header">User Settings</div>
+  <div class="content">
+    <form class="ui form">
+    
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Username</label>      
+		    </div>
+		    <div class="eight wide field">
+		      <label id="username">josephpalmaras</label>
+		      <input id="usernametxt" type="text" value="josephpalmaras" disabled/>
+		    </div>
+		</div>
+		<div class="inline fields">
+		    <div class="two wide field">
+		      <label>First Name</label>      
+		    </div>
+		    <div class="eight wide field">
+		    	<label id="fname">Joseph Gabriell</label>
+		      <input id="fnametxt" type="text" value="Joseph Gabriell"/>
+		    </div>
+		</div>
+		<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Last Name</label>      
+		    </div>
+		    <div class="eight wide field">
+		    	<label id="lname">Palmaras</label>
+		      <input id="lnametxt" type="text" value="Palmaras"/>
+		    </div>
+		</div>
+		<div id="currPass" class="inline fields">
+		    <div class="two wide field">
+		      <label>Password</label>      
+		    </div>
+		    <div class="eight wide field">
+		      <text>********</text> <a id="changepass" href="#" onclick="changePassword()">change password</a>
+		    </div>
+		</div>
+		<div id="newPass">
+			<div class="inline fields">
+			    <div class="two wide field">
+			      <label>Current Password</label>      
+			    </div>
+			    <div class="eight wide field">
+			      <input type="text"/>
+			    </div>
+			</div>
+			<div class="inline fields">
+			    <div class="two wide field">
+			      <label>New Password</label>      
+			    </div>
+			    <div class="eight wide field">
+			      <input type="text"/>
+			    </div>
+			</div>
+			<div class="inline fields">
+			    <div class="two wide field">
+			      <label>Confirm New Password</label>      
+			    </div>
+			    <div class="eight wide field">
+			      <input type="text"/>
+			    </div>
+			</div>
+		</div>
+    </form>
+  </div>
+		<div class="actions">
+			<div id="editBtn" class="ui button teal" onclick="edit()">Edit</div>
+			<div id="saveBtn" class="ui button teal" onclick="edit()">Save</div>
+		    <div class="ui cancel button teal" onclick="cancelEdit()">Cancel</div>
+		</div>
+</div>
 <div id="logout" class="ui small test modal transition" style="margin-top: -92.5px;">
     <div class="header">
       Log out
@@ -937,15 +802,48 @@ a {
       </div>
     </div>
   </div>
-
+</div>
 </body>
 <script type="text/javascript">
+	  //user settings
+	$('#fnametxt').hide();
+	$('#usernametxt').hide();
+	$('#lnametxt').hide();
+	$('#changepass').hide();
+	$('#saveBtn').hide();
+	$('#newPass').hide();
 
-/* 	$('.ui .item').on('click', function() {
-	    $('.ui .item').removeClass('active');
-	    $(this).addClass('active');
-	});  */    
-	
+	function edit(){
+		$('#saveBtn').toggle();
+		$('#username').toggle();
+		$('#fname').toggle();
+		$('#lname').toggle();
+		$('#usernametxt').toggle();
+		$('#fnametxt').toggle();
+		$('#lnametxt').toggle();
+		$('#editBtn').toggle();
+		$('#changepass').toggle();
+	}
+
+	function changePassword(){
+		$('#currPass').toggle();
+		$('#newPass').toggle();
+	}
+
+	function cancelEdit(){
+		$('#saveBtn').toggle();
+		$('#username').toggle();
+		$('#fname').toggle();
+		$('#lname').toggle();
+		$('#usernametxt').toggle();
+		$('#fnametxt').toggle();
+		$('#lnametxt').toggle();
+		$('#editBtn').toggle();
+		$('#changepass').toggle();
+		$('#currPass').toggle();
+		$('#newPass').toggle();
+	}
+	//-----end user settings
 	$('.top.menu .item').tab();
 	
 	$('#addemployeeBtn').click(function(){
@@ -955,7 +853,6 @@ a {
 	$('#addadministratorBtn').click(function(){
 		$('#addadministrator').modal('show');
 	});
-<<<<<<< HEAD
 
 	$('#editemployeeBtn').click(function() {
 		$('#editemployee').modal('show');
@@ -965,11 +862,8 @@ a {
 		$('#editadministrator').modal('show');
 	});
 	
-	$('#settingsLink').click(function() {
-=======
-	
 	$('#settingsLink').click(function(){
->>>>>>> master
+
 		$('#userSettings').modal('show');
 	});
 	
