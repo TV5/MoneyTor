@@ -152,7 +152,7 @@
 	    <th>August 18, 2015</th>
 	    <th>September 18, 2015</th>
 	    <th><a href="#" onClick="editData()"><i class="edit icon"></i></a></th>
-	    <th> <button class="ui button teal paymentsBtn" >View Payments</button></th>
+	    <th> <button class="ui button teal">View Payments</button></th>
 	  	</tr>
 	  	<tr>
 	    <th>001724</th>
@@ -161,7 +161,7 @@
 	    <th>August 12, 2015</th>
 	    <th>September 19, 2015</th>
 	    <th> <a href="#" onClick="editData()"><i class="edit icon"></i></a></th>
-	    <th> <button class="ui button teal paymentsBtn">View Payments</button></th>
+	    <th> <button class="ui button teal">View Payments</button></th>
 	  	</tr>
 	  	
 	  </tbody>
@@ -421,46 +421,42 @@
 
 
 <!-- PAYMENTS MODAL -->
-<div id="payments" class="ui modal small">
-  <div class="header">Payment History</div>
+<div id="payments" class="ui modal">
+  <div class="header">User Settings</div>
   <div class="content">
-  
-    <table class="ui celled padded table">
-      <thead>
-        <tr>
-    	  <th>Amount</th>
-    	  <th>Date</th>	
-    	</tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>P5,000.00</td>
-          <td>August 5, 2014</td>
-        </tr>
-         <tr>
-          <td>P5,000.00</td>
-          <td>August 5, 2014</td>
-        </tr>
-         <tr>
-          <td>P5,000.00</td>
-          <td>August 5, 2014</td>
-        </tr>
-      </tbody>
-    </table>
-  
     <form class="ui form">
-		<div class="inline fields">
-		    <div class="thirteen wide field">
-		      <input type="number" placeholder="Amount paid"/>
+    
+    	<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Username</label>      
 		    </div>
-		    <div class="three wide field">
-		    <div class="ui button teal">Add Payment</div>
+		    <div class="fourteen wide field">
+		      josephpalmaras
+		    </div>
+		</div>
+		
+		<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Password</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <text>****** </text> <a href="#">change password</a>
+		    </div>
+		</div>
+		
+		<div class="inline fields">
+		    <div class="two wide field">
+		      <label>Name</label>      
+		    </div>
+		    <div class="fourteen wide field">
+		      <input type="text" value="Joseph Gabriell Palmaras"/>
 		    </div>
 		</div>
     </form>
   </div>
 		<div class="actions">
-			<div class="ui approve button teal">Done</div>
+			<div class="ui approve button teal">Save</div>
+		    <div class="ui cancel button teal">Cancel</div>
 		</div>
 </div>
 
@@ -898,10 +894,6 @@
 	
 	$('#settingsLink').click(function(){
 		$('#userSettings').modal('show');
-	});
-	
-	$('.paymentsBtn').click(function(){
-		$('#payments').modal('show');
 	});
 	
 	$('#logoutLink').click(function(){

@@ -161,7 +161,7 @@
 	    <th>August 12, 2015</th>
 	    <th>September 19, 2015</th>
 	    <th> <a href="#" onClick="editData()"><i class="edit icon"></i></a></th>
-	    <th> <button class="ui button teal paymentsBtn">View Payments</button></th>
+	    <th> <button class="ui button teal">View Payments</button></th>
 	  	</tr>
 	  	
 	  </tbody>
@@ -422,7 +422,7 @@
 
 <!-- PAYMENTS MODAL -->
 <div id="payments" class="ui modal small">
-  <div class="header">Payment History</div>
+  <div class="header">User Settings</div>
   <div class="content">
   
     <table class="ui celled padded table">
@@ -450,17 +450,18 @@
   
     <form class="ui form">
 		<div class="inline fields">
-		    <div class="thirteen wide field">
-		      <input type="number" placeholder="Amount paid"/>
+		    <div class="twelve wide field">
+		      <input type="text" placeholder="Amount paid"/>
 		    </div>
-		    <div class="three wide field">
+		    <div class="five wide field">
 		    <div class="ui button teal">Add Payment</div>
 		    </div>
 		</div>
     </form>
   </div>
 		<div class="actions">
-			<div class="ui approve button teal">Done</div>
+			<div class="ui approve button teal">Save</div>
+		    <div class="ui cancel button teal">Cancel</div>
 		</div>
 </div>
 

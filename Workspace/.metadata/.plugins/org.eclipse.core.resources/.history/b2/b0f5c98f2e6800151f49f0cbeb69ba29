@@ -422,7 +422,7 @@
 
 <!-- PAYMENTS MODAL -->
 <div id="payments" class="ui modal small">
-  <div class="header">Payment History</div>
+  <div class="header">User Settings</div>
   <div class="content">
   
     <table class="ui celled padded table">
@@ -460,7 +460,8 @@
     </form>
   </div>
 		<div class="actions">
-			<div class="ui approve button teal">Done</div>
+			<div class="ui approve button teal">Save</div>
+		    <div class="ui cancel button teal">Cancel</div>
 		</div>
 </div>
 
