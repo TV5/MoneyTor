@@ -153,6 +153,7 @@ a {
     	color: #00b5ad !important;
     }
   </style>
+>>>>>>> master
 </head>
 <body>
 
@@ -202,6 +203,7 @@ a {
 		    </div>
 		  </div>
 			<table class="ui celled padded table">
+<<<<<<< HEAD
 				<thead>
 					<tr>
 						<th>Username <i class="dropdown icon link"
@@ -252,7 +254,7 @@ a {
 				<div class="disabled item">...</div>
 				<a class="item"> 10 </a> <a class="item"> 11 </a> <a class="item">
 					12 </a>
-
+=======
 			  <thead>
 			    <tr>
 			    <th>Name <i class="dropdown icon link" style="float:right"></i></th>
@@ -284,6 +286,7 @@ a {
 			  <a class="item">
 			    12
 			  </a>
+>>>>>>> master
 			</div>
 		</div>
 		<div class="ui bottom attached tab segment" data-tab="administratorsTab" style="padding-bottom:50px">
@@ -300,6 +303,7 @@ a {
 		    </div>
 		  </div>
 			<table class="ui celled padded table">
+<<<<<<< HEAD
 				<thead>
 					<tr>
 						<th>Username <i class="dropdown icon link"
