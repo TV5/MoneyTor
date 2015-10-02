@@ -15,18 +15,14 @@ edit accounts
 
 SONIA
 print summary report
-view payments
-add payment
 
 DK
 transactors
-delete suppliers
-delete customers
-edit suppliers
-edit customers
-
-TRISHA
-add suppliers
-add customers
-view suppliers
-view customers
+delete suppliers OK
+delete customers OK
+edit suppliers OK
+edit customers OK
+add suppliers OK
+add customers OK
+view suppliers OK
+view customers OK
