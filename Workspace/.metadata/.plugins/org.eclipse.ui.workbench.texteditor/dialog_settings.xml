@@ -3,26 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="141" key="DIALOG_Y_ORIGIN"/>
-		<item value="957" key="DIALOG_X_ORIGIN"/>
 		<item value="381" key="DIALOG_HEIGHT"/>
+		<item value="957" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="PAYM" key="selection"/>
+		<item value="MODAL" key="selection"/>
 		<list key="findhistory">
-			<item value="paym"/>
-			<item value="view pa"/>
-			<item value="payment"/>
-			<item value="Setting"/>
-			<item value="setting"/>
 			<item value="modal"/>
-			<item value="address"/>
-			<item value="name"/>
+			<item value="edit"/>
+			<item value="editM"/>
+			<item value="editData"/>
+			<item value="paymentsB"/>
+			<item value="paymentsBn"/>
+			<item value="$(&apos;#paymentsBtn&apos;)"/>
+			<item value="paymentsBtn"/>
 		</list>
 		<list key="replacehistory">
 			<item value="administrator"/>

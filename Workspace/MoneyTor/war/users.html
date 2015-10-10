@@ -87,9 +87,14 @@ a {
 		<div class="ui bottom attached tab segment active" data-tab="employeesTab" style="padding-bottom:50px">
 			<div class="ui form ">
 		  	<div class="inline fields" style="float:left">
-		    <div class="eleven wide field">
+		    <div class="sixteen wide field">
 		      <label>Entries per page</label>
-		      <input type="number" value="10">
+	      	  <select class="ui dropdown">
+			  <option value="5">5</option>
+			  <option value="10">10</option>
+			  <option value="30">30</option>
+			  <option value="100">100</option>
+			  </select>
 		    </div>
 		  	
 		    </div>
@@ -106,7 +111,9 @@ a {
 							style="float: right"></i></th>
 						<th>Last Name <i class="dropdown icon link"
 							style="float: right"></i></th>
-						<th></th>
+						<th>Status <i class="dropdown icon link"
+							style="float: right"></i></th>
+						<th>Edit</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -114,31 +121,22 @@ a {
 						<th>dksandimas</th>
 						<th>DK</th>
 						<th>Sandimas</th>
-						<th><button class="ui button teal" id="editemployeeBtn">edit</button></th>
+						<th>Active</th>
+						<th><a href="#"><i class="edit icon editEmployeeBtn"></i></a></th>
 					</tr>
 					<tr>
 						<th>ivanchua</th>
 						<th>Ivan</th>
 						<th>Chua</th>
-						<th><button class="ui button teal" id="editemployeeBtn">edit</button></th>
-					</tr>
-					<tr>
-						<th>jp</th>
-						<th>Joseph</th>
-						<th>Palmaras</th>
-						<th><button class="ui button teal" id="editemployeeBtn">edit</button></th>
+						<th>Active</th>
+						<th><a href="#"><i class="edit icon editEmployeeBtn"></i></a></th>
 					</tr>
 					<tr>
 						<th>svd</th>
 						<th>Sonia</th>
 						<th>Vidal</th>
-						<th><button class="ui button teal" id="editemployeeBtn">edit</button></th>
-					</tr>
-					<tr>
-						<th>trishalim</th>
-						<th>Trisha</th>
-						<th>Lim</th>
-						<th><button class="ui button teal" id="editemployeeBtn">edit</button></th>
+						<th>Inactive</th>
+						<th><a href="#"><i class="edit icon editEmployeeBtn"></i></a></th>
 					</tr>
 				</tbody>
 			</table>	
@@ -164,9 +162,14 @@ a {
 		<div class="ui bottom attached tab segment" data-tab="administratorsTab" style="padding-bottom:50px">
 			<div class="ui form ">
 		  	<div class="inline fields" style="float:left">
-		    <div class="eleven wide field">
+		    <div class="sixteen wide field">
 		      <label>Entries per page</label>
-		      <input type="number" value="10">
+	      	  <select class="ui dropdown">
+			  <option value="5">5</option>
+			  <option value="10">10</option>
+			  <option value="30">30</option>
+			  <option value="100">100</option>
+			  </select>
 		    </div>
 		  	
 		    </div>
@@ -183,7 +186,9 @@ a {
 							style="float: right"></i></th>
 						<th>Last Name <i class="dropdown icon link"
 							style="float: right"></i></th>
-						<th></th>
+						<th>Status <i class="dropdown icon link"
+							style="float: right"></i></th>
+						<th>Edit</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -191,23 +196,25 @@ a {
 						<th>dksandimas</th>
 						<th>DK</th>
 						<th>Sandimas</th>
-						<th><button class="ui button teal" id="editadministratorBtn">edit</button></th>
+						<th>Active</th>
+						<th><a href="#"><i class="edit icon editAdministratorBtn"></i></a></th>
 					</tr>
 					<tr>
 						<th>ivanchua</th>
 						<th>Ivan</th>
 						<th>Chua</th>
-						<th><button class="ui button teal" id="editadministratorBtn">edit</button></th>
+						<th>Active</th>
+						<th><a href="#"><i class="edit icon editAdministratorBtn"></i></a></th>
 					</tr>
 					<tr>
-						<th>jp</th>
-						<th>Joseph</th>
-						<th>Palmaras</th>
-						<th><button class="ui button teal" id="editadministratorBtn">edit</button></th>
+						<th>svd</th>
+						<th>Sonia</th>
+						<th>Vidal</th>
+						<th>Inactive</th>
+						<th><a href="#"><i class="edit icon editAdministratorBtn"></i></a></th>
 					</tr>
-					
 				</tbody>
-			</table>
+			</table>	
 
 			<div class="ui pagination menu right" style="float: right">
 				<a class="active item"> 1 </a>
@@ -339,7 +346,7 @@ a {
 
 <!-- edit employee INFORMATION  -->
 		<div id="editemployee" class="ui modal">
-			<div class="header">employee</div>
+			<div class="header">Employee</div>
 			<div class="content">
 				<form class="ui form">
 
@@ -375,7 +382,7 @@ a {
 							<label>Password</label>
 						</div>
 						<div class="seven wide field">
-							<input type="number" value="*******">
+							<input type="text" value="*******">
 						</div>
 					</div>
 
@@ -384,7 +391,7 @@ a {
 							<label>Confirm Password</label>
 						</div>
 						<div class="seven wide field">
-							<input type="number">
+							<input type="text" value="*******">
 						</div>
 					</div>
 				</form>
@@ -434,7 +441,7 @@ a {
 							<label>Password</label>
 						</div>
 						<div class="seven wide field">
-							<input type="number" value="*******">
+							<input type="text" value="*******">
 						</div>
 					</div>
 
@@ -443,7 +450,7 @@ a {
 							<label>Confirm Password</label>
 						</div>
 						<div class="seven wide field">
-							<input type="number">
+							<input type="text" value="*******">
 						</div>
 					</div>
 				</form>
@@ -854,11 +861,11 @@ a {
 		$('#addadministrator').modal('show');
 	});
 
-	$('#editemployeeBtn').click(function() {
+	$('.editEmployeeBtn').click(function() {
 		$('#editemployee').modal('show');
 	});
 
-	$('#editadministratorBtn').click(function() {
+	$('.editAdministratorBtn').click(function() {
 		$('#editadministrator').modal('show');
 	});
 	
