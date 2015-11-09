@@ -110,16 +110,16 @@
 [RELEASE MEMO] ------------------------------------------------------
 - The release notes is sent to the following recipients
 
-    1. Erwin Sarmiento       <esarmiento0302@gmail.com>
-    2. PL                    <email address>
-    3. APL                   <email address>
-    4. Recorder              <email address>
+    1. Erwin Sarmiento             <esarmiento0302@gmail.com>
+    2. Trisha Jean Lim             <limtrishajean@gmail.com>
+    3. Sonia Margarette Vidal      <babypinkpieinfiniteeffectilovemybebeboys@gmail.com>
+    4. Joseph Gabriell Palmaras    <josephpalmaras@gmail.com>
 
 
 
 =====================================================================
 
-APPROVED BY: <PL NAME>
+APPROVED BY: Trisha Jean Lim
 
 //nothing follows
 
