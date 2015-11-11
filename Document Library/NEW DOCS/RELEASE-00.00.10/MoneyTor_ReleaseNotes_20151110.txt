@@ -1,8 +1,8 @@
 =====================================================================
 [PROJECT NAME]............ MoneyTor
-[RELEASE VERSION]......... 00.00.01
+[RELEASE VERSION]......... 00.00.10
 [RELEASE DATE]............ 2015/11/10
-[PLATFORM / VERSION]...... Java V1.7.0_45
+[PLATFORM / VERSION]...... Java V1.7.0_21
 
 [SUPPORTED MODULES] ------------------------------------------------
 
@@ -15,10 +15,8 @@
 
 [KNOWN BUGS] --------------------------------------------------------
     
-    1. <UT/IT-BUG NUMBER>[User Management] User cannot edit employee/administrator account.
-    2. <UT/IT-BUG NUMBER>[User Management] User cannot delete employee/administrator account.
-    3. <UT/IT-BUG NUMBER>[User Management] In adding a new user, system does not display error message when username already exists.
-    4. <UT/IT-BUG NUMBER>[User Management] If values of “password” and “confirm password” fields do not match, no error message is displayed, but it is not added to the database.
+    1. <UT/IT-BUG NUMBER>[User Management] In adding a new user, system does not display error message when username already exists.
+    2. <UT/IT-BUG NUMBER>[User Management] If values of “password” and “confirm password” fields do not match, no error message is displayed, but it is not added to the database.
     
 [FIXED BUGS] --------------------------------------------------------
 
@@ -26,7 +24,7 @@
 [RELEASE FILES] -----------------------------------------------------
 
     1. <APPLICATION FILENAME>
-     Filename: MoneyTor.zip
+     Filename: MoneyTor-RELEASE-00.00.10.zip
 
 
 [ADDED FILES] -------------------------------------------------------
@@ -42,7 +40,6 @@
 [VIRUS CHECK] -------------------------------------------------------
 
     1. www.virustotal.com
-	Arcabit - 
 
 
 [SPECIAL COMMENTS] --------------------------------------------------
@@ -51,7 +48,7 @@
 [DESTINATION] -------------------------------------------------------
 - The release files can be accessed in the following location
 
-    1.  /Users/ivanwesleychua/Documents/GitItDone/MoneyTorBeta
+    1.  /Users/ivanwesleychua/Documents/GitItDone/MoneyTor/DocumentLibrary/NEW DOCS/RELEASE-00.00.10
 
 
 [RELEASE MEMO] ------------------------------------------------------
