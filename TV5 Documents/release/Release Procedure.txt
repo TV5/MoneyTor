@@ -1,0 +1,33 @@
+
+
+[Release Procedure]
+
+======================================================================
+1. APL reviews source codes of modules to be included for the current release.
+
+2.  APL checks if source codes are already modified based on his/her review comments.
+
+3.  APL emails to CM his/her release approval(email subject: [IT145] Source Codes Ready for yyyymmdd Release) cc Project Coordinator.  
+
+4.  CM compiles latest version of source codes and checks for errors.  If there are errors, 
+CM calls attention of respective Module-in-Charge to fix the errors ASAP.  
+
+5.  CM performs LOC count using LOCMetrics tool. Keep the html file.
+
+6.  CM makes a build file using the latest version of source codes (.war, .apk, .exe, .rar, etc...).
+
+7.  CM generates a database backup file (.sql, .backup, etc...) with filename ProjectName_DB_yyyymmdd.  This is only applicable for systems that need a database.
+
+8.  CM confirms if release files are working by making a sample run of the application using the generated release files.
+
+9.  CM creates release notes file and submits it to PL for review.
+
+10.  Upon PL`s approval of release notes,  CM sends release email with attached release notes and html format of the LOC count.
+
+======================================================================
+
+RELEASE FILES:
+1.  build files
+2.  db backup files
+3.  release notes
+4.  LOC count file

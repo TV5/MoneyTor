@@ -1,0 +1,1 @@
+INDEX VERSION 1.127+/Users/ivanwesleychua/Documents/GitItDone/MoneyTor/Workspace/.metadata/.plugins/org.eclipse.jdt.core
